@@ -1,0 +1,27 @@
+data.raw.item["iron-ore"].stack_size = 100
+data.raw.item["copper-ore"].stack_size = 100
+data.raw.item["coal"].stack_size = 100
+data.raw.item["stone"].stack_size = 100
+data.raw.item["wood"].stack_size = 200
+data.raw.item["copper-cable"].stack_size = 400
+data.raw.item["stone-brick"].stack_size = 200
+data.raw.item["iron-plate"].stack_size = 200
+data.raw.item["steel-plate"].stack_size = 100
+data.raw.item["copper-plate"].stack_size = 200
+data.raw.item["concrete"].stack_size = 200
+data.raw.item["stone-wall"].stack_size = 100
+
+data.raw.item["basic-transport-belt"].stack_size = 100
+data.raw.item["fast-transport-belt"].stack_size = 100
+data.raw.item["express-transport-belt"].stack_size = 100
+data.raw.item["basic-inserter"].stack_size = 100
+data.raw.item["long-handed-inserter"].stack_size = 100
+data.raw.item["fast-inserter"].stack_size = 100
+data.raw.item["smart-inserter"].stack_size = 100
+data.raw.item["pipe"].stack_size = 100
+data.raw.item["pipe-to-ground"].stack_size = 100
+data.raw.item["steam-engine"].stack_size = 50
+data.raw.item["small-lamp"].stack_size = 100
+data.raw.item["small-electric-pole"].stack_size = 100
+data.raw.item["medium-electric-pole"].stack_size = 100
+data.raw.item["big-electric-pole"].stack_size = 100

@@ -1,0 +1,10 @@
+data.raw.item["concrete-red"].stack_size = 200
+data.raw.item["concrete-orange"].stack_size = 200
+data.raw.item["concrete-yellow"].stack_size = 200
+data.raw.item["concrete-green"].stack_size = 200
+data.raw.item["concrete-cyan"].stack_size = 200
+data.raw.item["concrete-blue"].stack_size = 200
+data.raw.item["concrete-purple"].stack_size = 200
+data.raw.item["concrete-magenta"].stack_size = 200
+data.raw.item["concrete-white"].stack_size = 200
+data.raw.item["concrete-black"].stack_size = 200
