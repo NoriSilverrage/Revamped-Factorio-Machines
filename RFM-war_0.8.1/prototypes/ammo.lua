@@ -3,14 +3,12 @@ data:extend(
    {
     type = "recipe",
     name = "autocannon-shell",
-    energy_required = 1,
+    energy_required = 32,
     enabled = nori_test_state,
     ingredients =
     {
-        {"cannon-shell", 1},
-        --{"electronic-circuit", 10},
-        --{"steel-plate", 10},
-        --{"gun-turret", 1}
+        {"cannon-shell", 4},
+        {"steel-plate", 1}
     },
     result = "autocannon-shell",
     

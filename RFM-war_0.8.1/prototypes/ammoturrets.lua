@@ -491,3 +491,31 @@ data:extend({ rocketammoturret })
 --table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="sniper-ammo-turret"})
 --table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="ac-ammo-turret"})
 --table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="rocket-ammo-turret"})
+
+
+data:extend({
+  {
+    type = "technology",
+    name = "ac-turret",
+    icon = modname.."/graphics/icons/military.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "ac-ammo-turret"
+      },
+    },
+    prerequisites = {"military-3","tanks"},
+    unit =
+    {
+      count = 125,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+        {"science-pack-2", 2},
+        {"science-pack-3", 1},
+        {"alien-science-pack", 2},
+      },
+      time = 45
+    },
+})
