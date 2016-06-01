@@ -42,7 +42,7 @@ data:extend({
   {
     type = "recipe",
     name = "reinforced-wall",
-    energy_required = 2,
+    energy_required = 10,
     enabled = nori_test_state,
     ingredients =
     {

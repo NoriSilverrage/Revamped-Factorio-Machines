@@ -123,7 +123,7 @@ data:extend({
     icon = modname.."/graphics/icons/adv-laser-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
-    order = "b[turret]-a[gun-turret]-b",
+    order = "b[turret]-b[laser-turret]-b",
     place_result = "adv-laser-turret",
     enable = nori_test_state,
     stack_size = 50
@@ -135,7 +135,7 @@ data:extend({
     icon = modname.."/graphics/icons/sniper-laser-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
-    order = "b[turret]-a[gun-turret]-c",
+    order = "b[turret]-b[laser-turret]-c",
     place_result = "sniper-laser-turret",
     enable = nori_test_state,
     stack_size = 50

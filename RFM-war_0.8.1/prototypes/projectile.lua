@@ -1,6 +1,6 @@
 local cannonproj = table.deepcopy(data.raw["projectile"]["cannon-projectile"])
 cannonproj.name = "autocannon-shell"
-cannonproj.piercing_damage = 200
+cannonproj.piercing_damage = 100
 cannonproj.action =
     {
       type = "direct",
@@ -11,11 +11,11 @@ cannonproj.action =
         {
           {
             type = "damage",
-            damage = { amount = 100 , type = "physical"} -- Base is 150, DPS of 100
+            damage = { amount = 30 , type = "physical"} -- Base is 150, DPS of 100
           },
           {
             type = "damage",
-            damage = { amount = 25 , type = "explosion"} -- Base is 50 DPS of 33
+            damage = { amount = 7.5 , type = "impact"} -- Base is 50 DPS of 33
           }
         }
       }
@@ -23,7 +23,6 @@ cannonproj.action =
 cannonproj.acceleration = 0.1
 cannonproj.direction_only = false
 cannonproj.collision_box = nil
---cannonproj.animation.tint = {r=1, g=0, b=0}
 cannonproj.animation =
     {
       filename = modname.."/graphics/entity/bullet.png",

@@ -338,7 +338,7 @@ sniperammoturret.attacking_animation = nori_gun_turret_attack{type = "gun", tint
 sniperammoturret.base_picture = nori_gun_turret_base{type = "gun", base = darkred, mask = red}
 sniperammoturret.max_health = 600
 sniperammoturret.attack_parameters.range = 45
-sniperammoturret.attack_parameters.damage_modifier = 36
+sniperammoturret.attack_parameters.damage_modifier = 34
 sniperammoturret.attack_parameters.cooldown = 120
 sniperammoturret.inventory_size = 1
 sniperammoturret.automated_ammo_count = 10
