@@ -1,5 +1,3 @@
-local state = true
-
 data.raw["ammo-turret"]["gun-turret"].fast_replaceable_group = "turret"
 
 local defaultcolor = {r=0.5, g=0.5, b=0.5}
@@ -175,7 +173,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-b",
     place_result = "adv-ammo-turret",
-    enable = state,
+    enable = nori_test_state,
     stack_size = 50
   },
   
@@ -187,7 +185,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-c",
     place_result = "sniper-ammo-turret",
-    enable = state,
+    enable = nori_test_state,
     stack_size = 50
   },
     
@@ -199,7 +197,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-d",
     place_result = "ac-ammo-turret",
-    enable = state,
+    enable = nori_test_state,
     stack_size = 50
   },
   
@@ -211,7 +209,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-e",
     place_result = "rocket-ammo-turret",
-    enable = state,
+    enable = nori_test_state,
     stack_size = 50
   },
 
@@ -219,7 +217,7 @@ data:extend({
     type = "recipe",
     name = "adv-ammo-turret",
     energy_required = 20,
-    enabled = state,
+    enabled = nori_test_state,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -235,7 +233,7 @@ data:extend({
     type = "recipe",
     name = "sniper-ammo-turret",
     energy_required = 20,
-    enabled = state,
+    enabled = nori_test_state,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -251,7 +249,7 @@ data:extend({
     type = "recipe",
     name = "ac-ammo-turret",
     energy_required = 20,
-    enabled = state,
+    enabled = nori_test_state,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -267,7 +265,7 @@ data:extend({
     type = "recipe",
     name = "rocket-ammo-turret",
     energy_required = 20,
-    enabled = state,
+    enabled = nori_test_state,
     ingredients =
     {
         {"rocket-launcher", 1},
@@ -393,7 +391,7 @@ acammoturret.attack_parameters =
       sound =
       {
         {
-          filename = "__turrets__/sound/auto-cannon.ogg",
+          filename = modname.."/sound/auto-cannon.ogg",
           volume = 1.0
         }
       },

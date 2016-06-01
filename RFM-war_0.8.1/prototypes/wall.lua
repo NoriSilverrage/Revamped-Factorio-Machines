@@ -2,40 +2,40 @@ data:extend({
  {
     type = "item",
     name = "reinforced-wall",
-    icon = "__base__/graphics/icons/stone-wall.png",
+    icon = modname.."/graphics/icons/reinforced-wall.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "a[wall]-a[reinforced-wall]",
     place_result = "reinforced-wall",
-		enabled = false,
+	enabled = nori_test_state,
     stack_size = 100
   },
   
   {
     type = "item",
-    name = "gate-2",
-    icon = "__base__/graphics/icons/gate.png",
+    name = "reinforced-gate",
+    icon = modname.."/graphics/icons/reinforced-gate.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
-    order = "a[wall]-b[gate-2]",
-    place_result = "gate-2",
-		enabled = false,
+    order = "a[wall]-b[reinforced-gate]",
+    place_result = "reinforced-gate",
+	enabled = nori_test_state,
     stack_size = 50
   },
 
   
   {
     type = "recipe",
-    name = "gate-2",
+    name = "reinforced-gate",
     energy_required = 2,
-    enabled = "false",
+    enabled = nori_test_state,
     ingredients =
     {
        {"gate", 2},
        {"concrete", 10},
        {"steel-plate", 1}
     },
-    result = "gate-2",
+    result = "reinforced-gate",
     result_count = 2
   },
   
@@ -43,7 +43,7 @@ data:extend({
     type = "recipe",
     name = "reinforced-wall",
     energy_required = 2,
-    enabled = "false",
+    enabled = nori_test_state,
     ingredients =
     {
        {"stone-wall", 2},
@@ -388,7 +388,7 @@ data:extend({ wall2 })
 
 -- Reinforced Stone Gate
 local gate2 = table.deepcopy(data.raw["gate"]["gate"])
-gate2.name = "gate-2"
+gate2.name = "reinforced-gate"
 gate2.max_health = 700
 
 gate2.vertical_animation =
@@ -745,7 +745,7 @@ gate2.resistances =
             percent = 25
           },
     }
-gate2.minable.result = "gate-2"
+gate2.minable.result = "reinforced-gate"
 gate2.fast_replaceable_group = "gate"
 data:extend({ gate2 })
 
@@ -753,4 +753,4 @@ data:extend({ gate2 })
 
 
 table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="reinforced-wall"})
-table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="gate-2"})
+table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="reinforced-gate"})

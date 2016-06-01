@@ -4,7 +4,7 @@ data:extend(
     type = "recipe",
     name = "autocannon-shell",
     energy_required = 1,
-    enabled = "false",
+    enabled = nori_test_state,
     ingredients =
     {
         {"cannon-shell", 1},

@@ -3,7 +3,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-damage-1",
-    icon = "__turrets__/graphics/icons/cannon-damage.png",
+    icon = modname.."/graphics/icons/cannon-damage.png",
     effects =
     {
       {
@@ -29,7 +29,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-damage-2",
-    icon = "__turrets__/graphics/icons/cannon-damage.png",
+    icon = modname.."/graphics/icons/cannon-damage.png",
     effects =
     {
       {
@@ -55,7 +55,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-damage-3",
-    icon = "__turrets__/graphics/icons/cannon-damage.png",
+    icon = modname.."/graphics/icons/cannon-damage.png",
     effects =
     {
       {
@@ -81,7 +81,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-damage-4",
-    icon = "__turrets__/graphics/icons/cannon-damage.png",
+    icon = modname.."/graphics/icons/cannon-damage.png",
     effects =
     {
       {
@@ -108,7 +108,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-damage-5",
-    icon = "__turrets__/graphics/icons/cannon-damage.png",
+    icon = modname.."/graphics/icons/cannon-damage.png",
     effects =
     {
       {
@@ -136,7 +136,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-damage-6",
-    icon = "__turrets__/graphics/icons/cannon-damage.png",
+    icon = modname.."/graphics/icons/cannon-damage.png",
     effects =
     {
       {
@@ -164,7 +164,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-speed-1",
-    icon = "__turrets__/graphics/icons/cannon-speed.png",
+    icon = modname.."/graphics/icons/cannon-speed.png",
     effects =
     {
       {
@@ -189,7 +189,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-speed-2",
-    icon = "__turrets__/graphics/icons/cannon-speed.png",
+    icon = modname.."/graphics/icons/cannon-speed.png",
     effects =
     {
       {
@@ -215,7 +215,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-speed-3",
-    icon = "__turrets__/graphics/icons/cannon-speed.png",
+    icon = modname.."/graphics/icons/cannon-speed.png",
     effects =
     {
       {
@@ -241,7 +241,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-speed-4",
-    icon = "__turrets__/graphics/icons/cannon-speed.png",
+    icon = modname.."/graphics/icons/cannon-speed.png",
     effects =
     {
       {
@@ -268,7 +268,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-speed-5",
-    icon = "__turrets__/graphics/icons/cannon-speed.png",
+    icon = modname.."/graphics/icons/cannon-speed.png",
     effects =
     {
       {
@@ -296,7 +296,7 @@ data:extend(
   {
     type = "technology",
     name = "nori-cannon-speed-6",
-    icon = "__turrets__/graphics/icons/cannon-speed.png",
+    icon = modname.."/graphics/icons/cannon-speed.png",
     effects =
     {
       {
