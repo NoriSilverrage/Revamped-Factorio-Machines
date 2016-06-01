@@ -1,3 +1,3 @@
-modname="__turrets__"
+modname="__RFM-war__"
 
 baseresistances = true
