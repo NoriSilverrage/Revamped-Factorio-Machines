@@ -1,3 +1,4 @@
+require("config")
 require("prototypes.ammoturrets")
 require("prototypes.ammo")
 require("prototypes.cannon-upgrades")

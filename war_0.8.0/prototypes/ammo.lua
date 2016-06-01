@@ -2,7 +2,7 @@ data:extend(
 {
    {
     type = "recipe",
-    name = "cannon-shot-shell",
+    name = "autocannon-shell",
     energy_required = 1,
     enabled = "false",
     ingredients =
@@ -12,14 +12,14 @@ data:extend(
         --{"steel-plate", 10},
         --{"gun-turret", 1}
     },
-    result = "cannon-shot-shell",
+    result = "autocannon-shell",
     
   },
     
   {
     type = "ammo",
-    name = "cannon-shot-shell",
-    icon = "__base__/graphics/icons/cannon-shell.png",
+    name = "autocannon-shell",
+    icon = modname.."/graphics/icons/autocannon-shell.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "ammo",
     order = "d[cannon-shell]-c",
@@ -41,7 +41,7 @@ data:extend(
         action_delivery =
         {
           type = "projectile",
-          projectile = "cannon-shot-projectile",
+          projectile = "autocannon-shell",
           starting_speed = 0.1,
           direction_deviation = 0.1,
           range_deviation = 0.1,

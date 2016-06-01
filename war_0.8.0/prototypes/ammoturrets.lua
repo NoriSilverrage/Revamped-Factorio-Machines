@@ -1,3 +1,5 @@
+local state = true
+
 data.raw["ammo-turret"]["gun-turret"].fast_replaceable_group = "turret"
 
 local defaultcolor = {r=0.5, g=0.5, b=0.5}
@@ -168,48 +170,48 @@ data:extend({
  {
     type = "item",
     name = "adv-ammo-turret",
-    icon = "__base__/graphics/icons/gun-turret.png",
+    icon = modname.."/graphics/icons/adv-gun-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-b",
     place_result = "adv-ammo-turret",
-    enable = false,
+    enable = state,
     stack_size = 50
   },
   
    {
     type = "item",
     name = "sniper-ammo-turret",
-    icon = "__base__/graphics/icons/gun-turret.png",
+    icon = modname.."/graphics/icons/sniper-gun-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-c",
     place_result = "sniper-ammo-turret",
-    enable = false,
+    enable = state,
     stack_size = 50
   },
     
    {
     type = "item",
-    name = "heavy-ammo-turret",
-    icon = "__base__/graphics/icons/gun-turret.png",
+    name = "ac-ammo-turret",
+    icon = modname.."/graphics/icons/ac-gun-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-d",
-    place_result = "heavy-ammo-turret",
-    enable = false,
+    place_result = "ac-ammo-turret",
+    enable = state,
     stack_size = 50
   },
   
   {
     type = "item",
     name = "rocket-ammo-turret",
-    icon = "__base__/graphics/icons/gun-turret.png",
+    icon = modname.."/graphics/icons/rocket-gun-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-e",
     place_result = "rocket-ammo-turret",
-    enable = false,
+    enable = state,
     stack_size = 50
   },
 
@@ -217,7 +219,7 @@ data:extend({
     type = "recipe",
     name = "adv-ammo-turret",
     energy_required = 20,
-    enabled = "false",
+    enabled = state,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -233,11 +235,11 @@ data:extend({
     type = "recipe",
     name = "sniper-ammo-turret",
     energy_required = 20,
-    enabled = "false",
+    enabled = state,
     ingredients =
     {
         {"iron-gear-wheel", 10},
-        {"electronic-circuit", 10},
+        {"advanced-circuit", 10},
         {"steel-plate", 10},
         {"gun-turret", 1}
     },
@@ -247,17 +249,17 @@ data:extend({
   
   {
     type = "recipe",
-    name = "heavy-ammo-turret",
+    name = "ac-ammo-turret",
     energy_required = 20,
-    enabled = "false",
+    enabled = state,
     ingredients =
     {
         {"iron-gear-wheel", 10},
-        {"electronic-circuit", 10},
+        {"advanced-circuit", 10},
         {"steel-plate", 10},
-        {"gun-turret", 1}
+        {"gun-turret", 2}
     },
-    result = "heavy-ammo-turret",
+    result = "ac-ammo-turret",
 
   },
 
@@ -265,12 +267,13 @@ data:extend({
     type = "recipe",
     name = "rocket-ammo-turret",
     energy_required = 20,
-    enabled = "false",
+    enabled = state,
     ingredients =
     {
+        {"rocket-launcher", 1},
         {"iron-gear-wheel", 10},
         {"electronic-circuit", 10},
-        {"steel-plate", 10},
+        {"iron-plate", 10},
         {"gun-turret", 1}
     },
     result = "rocket-ammo-turret",
@@ -314,6 +317,10 @@ ammoturret2.resistances =
         percent = 35
       },
       {
+        type = "explosion",
+        percent = 90
+      },
+      {
         type = "impact",
         percent = 35
       }
@@ -331,9 +338,9 @@ sniperammoturret.folding_animation = nori_gun_turret_extension{run_mode = "backw
 sniperammoturret.prepared_animation = nori_gun_turret_attack{frame_count=1, type = "gun", tint = lightred}
 sniperammoturret.attacking_animation = nori_gun_turret_attack{type = "gun", tint = lightred}
 sniperammoturret.base_picture = nori_gun_turret_base{type = "gun", base = darkred, mask = red}
-sniperammoturret.max_health = 800
+sniperammoturret.max_health = 600
 sniperammoturret.attack_parameters.range = 45
-sniperammoturret.attack_parameters.damage_modifier = 30
+sniperammoturret.attack_parameters.damage_modifier = 36
 sniperammoturret.attack_parameters.cooldown = 120
 sniperammoturret.inventory_size = 1
 sniperammoturret.automated_ammo_count = 10
@@ -364,16 +371,16 @@ data:extend({ sniperammoturret })
 
 --** Ammo Heavy Turret **--
 
-local heavyammoturret = table.deepcopy(data.raw["ammo-turret"]["gun-turret"])
-heavyammoturret.name = "heavy-ammo-turret"
-heavyammoturret.folded_animation = nori_gun_turret_extension{frame_count=1, line_length = 1, type = "gun", tint = lightyellow}
-heavyammoturret.preparing_animation = nori_gun_turret_extension{type = "gun", tint = lightyellow}
-heavyammoturret.folding_animation = nori_gun_turret_extension{run_mode = "backward", type = "gun", tint = lightyellow}
-heavyammoturret.prepared_animation = nori_gun_turret_attack{frame_count=1, type = "gun", tint = lightyellow}
-heavyammoturret.attacking_animation = nori_gun_turret_attack{type = "gun", tint = lightyellow}
-heavyammoturret.base_picture = nori_gun_turret_base{type = "gun", base = darkyellow, mask = yellow}
-heavyammoturret.max_health = 1200
-heavyammoturret.attack_parameters =
+local acammoturret = table.deepcopy(data.raw["ammo-turret"]["gun-turret"])
+acammoturret.name = "ac-ammo-turret"
+acammoturret.folded_animation = nori_gun_turret_extension{frame_count=1, line_length = 1, type = "gun", tint = lightyellow}
+acammoturret.preparing_animation = nori_gun_turret_extension{type = "gun", tint = lightyellow}
+acammoturret.folding_animation = nori_gun_turret_extension{run_mode = "backward", type = "gun", tint = lightyellow}
+acammoturret.prepared_animation = nori_gun_turret_attack{frame_count=1, type = "gun", tint = lightyellow}
+acammoturret.attacking_animation = nori_gun_turret_attack{type = "gun", tint = lightyellow}
+acammoturret.base_picture = nori_gun_turret_base{type = "gun", base = darkyellow, mask = yellow}
+acammoturret.max_health = 1200
+acammoturret.attack_parameters =
     {
       type = "projectile",
       ammo_category = "cannon-shell",
@@ -391,12 +398,12 @@ heavyammoturret.attack_parameters =
         }
       },
     }
-heavyammoturret.inventory_size = 1
-heavyammoturret.automated_ammo_count = 10
-heavyammoturret.attacking_speed = 10
-heavyammoturret.minable.result = "heavy-ammo-turret"
-heavyammoturret.fast_replaceable_group = "turret"
-heavyammoturret.resistances =
+acammoturret.inventory_size = 1
+acammoturret.automated_ammo_count = 10
+acammoturret.attacking_speed = 10
+acammoturret.minable.result = "ac-ammo-turret"
+acammoturret.fast_replaceable_group = "turret"
+acammoturret.resistances =
     {
       {
         type = "physical",
@@ -412,14 +419,14 @@ heavyammoturret.resistances =
       },
       {
         type = "explosion",
-        percent = 50
+        percent = 90
       },
       {
         type = "impact",
         percent = 35
       }
     }
-data:extend({ heavyammoturret })
+data:extend({ acammoturret })
 
 
 
@@ -433,7 +440,7 @@ rocketammoturret.folding_animation = nori_gun_turret_extension{run_mode = "backw
 rocketammoturret.prepared_animation = nori_gun_turret_attack{frame_count=1, type = "gun", tint = lightblue}
 rocketammoturret.attacking_animation = nori_gun_turret_attack{type = "gun", tint = lightblue}
 rocketammoturret.base_picture = nori_gun_turret_base{type = "gun", base = darkblue, mask = blue}
-rocketammoturret.max_health = 800
+rocketammoturret.max_health = 1000
 rocketammoturret.attack_parameters =
     {
       type = "projectile",
@@ -460,7 +467,7 @@ rocketammoturret.resistances =
     {
       {
         type = "physical",
-        percent = 20
+        percent = 50
       },
       {
         type = "acid",
@@ -469,6 +476,10 @@ rocketammoturret.resistances =
       {
         type = "poison",
         percent = 25
+      },
+      {
+        type = "explosion",
+        percent = 90
       },
       {
         type = "impact",
@@ -480,5 +491,5 @@ data:extend({ rocketammoturret })
 
 --table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="adv-ammo-turret"})
 --table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="sniper-ammo-turret"})
---table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="heavy-ammo-turret"})
+--table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="ac-ammo-turret"})
 --table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="rocket-ammo-turret"})

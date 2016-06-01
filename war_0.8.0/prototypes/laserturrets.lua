@@ -120,7 +120,7 @@ data:extend({
  {
     type = "item",
     name = "adv-laser-turret",
-    icon = "__base__/graphics/icons/laser-turret.png",
+    icon = modname.."/graphics/icons/adv-laser-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-b",
@@ -132,7 +132,7 @@ data:extend({
    {
     type = "item",
     name = "sniper-laser-turret",
-    icon = "__base__/graphics/icons/laser-turret.png",
+    icon = modname.."/graphics/icons/sniper-laser-turret.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-c",
@@ -150,7 +150,7 @@ data:extend({
     ingredients =
     {
         {"iron-gear-wheel", 10},
-        {"electronic-circuit", 10},
+        {"advanced-circuit", 10},
         {"steel-plate", 10},
         {"laser-turret", 1}
     },
@@ -161,14 +161,14 @@ data:extend({
   {
     type = "recipe",
     name = "sniper-laser-turret",
-    energy_required = 20,
+    energy_required = 30,
     enabled = "false",
     ingredients =
     {
         {"iron-gear-wheel", 10},
-        {"electronic-circuit", 10},
+        {"advanced-circuit", 10},
         {"steel-plate", 10},
-        {"laser-turret", 1}
+        {"laser-turret", 2}
     },
     result = "sniper-laser-turret",
 
@@ -187,8 +187,8 @@ advlaserturret.minable.result = "adv-laser-turret"
 advlaserturret.energy_source =
     {
       type = "electric",
-      buffer_capacity = "4201kJ",
-      input_flow_limit = "12600kW",
+      buffer_capacity = "4801kJ",
+      input_flow_limit = "12000kW",
       drain = "36kW",
       usage_priority = "primary-input"
     }
@@ -205,7 +205,7 @@ advlaserturret.attack_parameters =
       {
         type = "projectile",
         category = "laser-turret",
-        energy_consumption = "1400kJ",
+        energy_consumption = "1200kJ",
         action =
         {
           {
@@ -227,15 +227,19 @@ advlaserturret.resistances =
     {
       {
         type = "physical",
-        percent = 30
+        percent = 35
       },
       {
         type = "acid",
-        percent = 35
+        percent = 25
       },
       {
         type = "poison",
         percent = 35
+      },
+      {
+        type = "explosion",
+        percent = 90
       },
       {
         type = "impact",
@@ -248,7 +252,7 @@ data:extend({ advlaserturret })
 
 local sniperlaserturret = table.deepcopy(data.raw["electric-turret"]["laser-turret"])
 sniperlaserturret.name = "sniper-laser-turret"
-sniperlaserturret.max_health = 1200
+sniperlaserturret.max_health = 1000
 sniperlaserturret.folded_animation = nori_laser_turret_extension{frame_count=1, line_length = 1, tint = lightred}
 sniperlaserturret.preparing_animation = nori_laser_turret_extension{type = "gun", tint = lightred}
 sniperlaserturret.folding_animation = nori_laser_turret_extension{run_mode = "backward",tint = lightred}
@@ -258,9 +262,9 @@ sniperlaserturret.minable.result = "sniper-laser-turret"
 sniperlaserturret.energy_source =
     {
       type = "electric",
-      buffer_capacity = "4201kJ",
-      input_flow_limit = "12600kW",
-      drain = "36kW",
+      buffer_capacity = "12801kJ",
+      input_flow_limit = "25600kW",
+      drain = "48kW",
       usage_priority = "primary-input"
     }
 sniperlaserturret.attack_parameters =
@@ -271,12 +275,12 @@ sniperlaserturret.attack_parameters =
       projectile_center = {0, -0.2},
       projectile_creation_distance = 1.4,
       range = 50,
-      damage_modifier = 40,
+      damage_modifier = 45,
       ammo_type =
       {
         type = "projectile",
         category = "laser-turret",
-        energy_consumption = "1400kJ",
+        energy_consumption = "6400kJ",
         action =
         {
           {
@@ -286,7 +290,7 @@ sniperlaserturret.attack_parameters =
               {
                 type = "projectile",
                 projectile = "blue-laser",
-                starting_speed = 0.28
+                starting_speed = 0.5
               }
             }
           }
@@ -298,11 +302,11 @@ sniperlaserturret.resistances =
     {
       {
         type = "physical",
-        percent = 30
+        percent = 25
       },
       {
         type = "acid",
-        percent = 35
+        percent = 25
       },
       {
         type = "poison",
@@ -310,7 +314,7 @@ sniperlaserturret.resistances =
       },
       {
         type = "impact",
-        percent = 35
+        percent = 50
       }
     }    
 data:extend({ sniperlaserturret })

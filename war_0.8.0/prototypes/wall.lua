@@ -1,12 +1,12 @@
 data:extend({ 
  {
     type = "item",
-    name = "stone-wall-2",
+    name = "reinforced-wall",
     icon = "__base__/graphics/icons/stone-wall.png",
     flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
-    order = "a[wall]-a[stone-wall-2]",
-    place_result = "stone-wall-2",
+    order = "a[wall]-a[reinforced-wall]",
+    place_result = "reinforced-wall",
 		enabled = false,
     stack_size = 100
   },
@@ -41,7 +41,7 @@ data:extend({
   
   {
     type = "recipe",
-    name = "stone-wall-2",
+    name = "reinforced-wall",
     energy_required = 2,
     enabled = "false",
     ingredients =
@@ -50,7 +50,7 @@ data:extend({
        {"concrete", 10},
        {"steel-plate", 1}
     },
-    result = "stone-wall-2",
+    result = "reinforced-wall",
     result_count = 2
   },
 
@@ -60,7 +60,7 @@ data:extend({
 
 -- Reinforced Stone Wall **************************************************************************
 local wall2 = table.deepcopy(data.raw["wall"]["stone-wall"])
-wall2.name = "stone-wall-2"
+wall2.name = "reinforced-wall"
 wall2.max_health = 700
 
 wall2.repair_speed_modifier = 3
@@ -80,7 +80,7 @@ wall2.resistances =
           {
             type = "explosion",
             decrease = 10,
-            percent = 50
+            percent = 90
           },
           {
             type = "fire",
@@ -101,7 +101,7 @@ wall2.resistances =
             percent = 25
           },
     }
-wall2.minable.result = "stone-wall-2"
+wall2.minable.result = "reinforced-wall"
 wall2.fast_replaceable_group = "wall"
 wall2.pictures =
     {
@@ -724,7 +724,7 @@ gate2.resistances =
           {
             type = "explosion",
             decrease = 10,
-            percent = 50
+            percent = 90
           },
           {
             type = "fire",
@@ -752,5 +752,5 @@ data:extend({ gate2 })
 
 
 
-table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="stone-wall-2"})
+table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="reinforced-wall"})
 table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="gate-2"})

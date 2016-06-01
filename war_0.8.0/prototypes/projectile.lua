@@ -1,5 +1,5 @@
 local cannonproj = table.deepcopy(data.raw["projectile"]["cannon-projectile"])
-cannonproj.name = "cannon-shot-projectile"
+cannonproj.name = "autocannon-shell"
 cannonproj.piercing_damage = 200
 cannonproj.action =
     {
@@ -26,7 +26,7 @@ cannonproj.collision_box = nil
 --cannonproj.animation.tint = {r=1, g=0, b=0}
 cannonproj.animation =
     {
-      filename = "__turrets__/graphics/entity/bullet.png",
+      filename = modname.."/graphics/entity/bullet.png",
       tint = {r=1, g=0.46, b=0.27},
       frame_count = 1,
       width = 5,
@@ -43,12 +43,12 @@ local laserpurple = table.deepcopy(data.raw["projectile"]["laser"])
 laserpurple.name = "purple-laser"
 laserpurple.animation =
       {
-		  filename = "__turrets__/graphics/entity/laser-purple.png",
+		  filename = modname.."/graphics/entity/laser-purple.png",
 		  line_length = 16,
 		  tint = {r=1.0, g=0.0, b=1.0},
 		  frame_count = 1,
 		  width = 12,
-		  height = 100,
+		  height = 50,
           priority = "high",
 		  blend_mode = "additive"
 		}
@@ -60,12 +60,12 @@ local laserblue = table.deepcopy(data.raw["projectile"]["laser"])
 laserblue.name = "blue-laser"
 laserblue.animation =
       {
-		  filename = "__turrets__/graphics/entity/laser-blue.png",
+		  filename = modname.."/graphics/entity/laser-blue.png",
 		  line_length = 16,
 		  tint = {r=0.12, g=0.57, b=1.0},
 		  frame_count = 1,
 		  width = 12,
-		  height = 50,
+		  height = 100,
           priority = "high",
 		  blend_mode = "additive"
 		}
