@@ -108,51 +108,51 @@ data.raw["land-mine"]["land-mine"].action =
         }
       }
     }
-data.raw.projectile["rocket"].acceleration = 0.025
-data.raw.projectile["rocket"].action.action_delivery.target_effects =
-        {
-          {
-            type = "create-entity",
-            entity_name = "explosion"
-          },
-          {
-            type = "damage",
-            damage = {amount = 75, type = "explosion"}
-          },
-          {
-            type = "create-entity",
-            entity_name = "small-scorchmark",
-            check_buildability = true
-          }
-        }
-data.raw.projectile["explosive-rocket"].acceleration = 0.015
-data.raw.projectile["explosive-rocket"].action.action_delivery.target_effects =
-        {
-          {
-            type = "create-entity",
-            entity_name = "explosion"
-          },
-          {
-            type = "nested-result",
-            action =
-            {
-              type = "area",
-              perimeter = 12,
-              action_delivery =
-              {
-                type = "instant",
-                target_effects =
-                {
-                  {
-                    type = "damage",
-                    damage = {amount = 45, type = "physical"}
-                  },
-                  {
-                    type = "create-entity",
-                    entity_name = "explosion"
-                  }
-                }
-              }
-            },
-          }
-        }
+--data.raw.projectile["rocket"].acceleration = 0.025
+--data.raw.projectile["rocket"].action.action_delivery.target_effects =
+--        {
+--          {
+--            type = "create-entity",
+--            entity_name = "explosion"
+--          },
+--          {
+--            type = "damage",
+--            damage = {amount = 75, type = "explosion"} -- base is 60 basically 60dps
+--          },
+--          {
+--            type = "create-entity",
+--            entity_name = "small-scorchmark",
+--            check_buildability = true
+--          }
+--        }
+--data.raw.projectile["explosive-rocket"].acceleration = 0.015
+--data.raw.projectile["explosive-rocket"].action.action_delivery.target_effects =
+--        {
+--          {
+--            type = "create-entity",
+--            entity_name = "explosion"
+--          },
+--          {
+--            type = "nested-result",
+--            action =
+--            {
+--              type = "area",
+--              perimeter = 12,
+--              action_delivery =
+--              {
+--                type = "instant",
+--                target_effects =
+--                {
+--                  {
+--                    type = "damage",
+--                    damage = {amount = 45, type = "physical"}
+--                  },
+--                  {
+--                    type = "create-entity",
+--                    entity_name = "explosion"
+--                  }
+--                }
+--              }
+--            },
+--          }
+--        }

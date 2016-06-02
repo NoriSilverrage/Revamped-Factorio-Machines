@@ -13,6 +13,19 @@ data:extend(
     result = "autocannon-shell",
     
   },
+  
+  {
+    type = "recipe",
+    name = "impacting-rocket",
+    enabled = false,
+    energy_required = 20,
+    ingredients =
+    {
+      {"rocket", 4},
+      {"iron-plate", 1}
+    },
+    result = "rocket"
+  },
     
   {
     type = "ammo",
@@ -47,5 +60,36 @@ data:extend(
         }
       }
     },
-  }
+  },
+  
+  {
+    type = "ammo",
+    name = "impacting-rocket",
+    icon = modname.."/graphics/icons/impacting-rocket.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "ammo",
+    order = "d[rocket-launcher]-a[basic]-b",
+    stack_size = 100,
+    magazine_size = 4,
+    ammo_type =
+    {
+      category = "rocket",
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "projectile",
+          projectile = "rocket",
+          starting_speed = 0.1,
+          source_effects =
+          {
+            type = "create-entity",
+            entity_name = "explosion-hit"
+          }
+        }
+      }
+    },
+
+  },
 })

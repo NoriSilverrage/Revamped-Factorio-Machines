@@ -319,3 +319,35 @@ sniperlaserturret.resistances =
     }    
 data:extend({ sniperlaserturret })
 
+
+
+data:extend({
+  {
+    type = "technology",
+    name = "adv-laser-turrets",
+    icon = modname.."/graphics/icons/ac-turret-tech.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "adv-laser-turret"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sniper-laser-turret"
+      },
+    },
+    prerequisites = {"military-3","laser-turrets"},
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+        {"science-pack-2", 2},
+        {"science-pack-3", 1},
+        {"alien-science-pack", 2},
+      },
+      time = 45
+    },
+})    

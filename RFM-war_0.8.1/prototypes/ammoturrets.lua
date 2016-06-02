@@ -269,7 +269,6 @@ data:extend({
     ingredients =
     {
         {"rocket-launcher", 1},
-        {"iron-gear-wheel", 10},
         {"electronic-circuit", 10},
         {"iron-plate", 10},
         {"gun-turret", 1}
@@ -383,7 +382,7 @@ acammoturret.attack_parameters =
       type = "projectile",
       ammo_category = "cannon-shell",
       cooldown = 90,
-      damage_modifier = 2,
+      damage_modifier = 1.5,
       movement_slow_down_factor = 0,
       projectile_creation_distance = 1.6,
       projectile_center = {-0.15625, -0.07812},
@@ -444,7 +443,8 @@ rocketammoturret.attack_parameters =
       type = "projectile",
       ammo_category = "rocket",
       movement_slow_down_factor = 0,
-      cooldown = 60,
+      cooldown = 40,
+      damage_modifier = 1.5,      
       projectile_creation_distance = 0.6,
       range = 25,
       projectile_center = {-0.17, 0},
@@ -496,19 +496,81 @@ data:extend({ rocketammoturret })
 data:extend({
   {
     type = "technology",
-    name = "ac-turret",
-    icon = modname.."/graphics/icons/military.png",
+    name = "ac-gun-turret",
+    icon = modname.."/graphics/icons/ac-turret-tech.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "ac-ammo-turret"
+        recipe = "ac-aamo-turret"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "autocannon-shell"
       },
     },
     prerequisites = {"military-3","tanks"},
     unit =
     {
-      count = 125,
+      count = 100,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+        {"science-pack-2", 2},
+        {"science-pack-3", 1},
+        {"alien-science-pack", 2},
+      },
+      time = 45
+    },
+    
+  {
+    type = "technology",
+    name = "adv-gun-turret",
+    icon = modname.."/graphics/icons/adv-turret-tech",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "adv-ammo-turret"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sniper-ammo-turret"
+      },
+    },
+    prerequisites = {"military-3"},
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+        {"science-pack-2", 2},
+        {"science-pack-3", 1},
+        {"alien-science-pack", 2},
+      },
+      time = 45
+    },
+    
+  {
+    type = "technology",
+    name = "rocket-gun-turret",
+    icon = modname.."/graphics/icons/rocket-turret-tech",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "rocket-ammo-turret"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "impacting-rocket"
+      },
+    },
+    prerequisites = {"military-3","rocketry"},
+    unit =
+    {
+      count = 100,
       ingredients =
       {
         {"science-pack-1", 2},

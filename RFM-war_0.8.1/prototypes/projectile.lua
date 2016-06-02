@@ -1,3 +1,4 @@
+--Autocannon Projectile
 local cannonproj = table.deepcopy(data.raw["projectile"]["cannon-projectile"])
 cannonproj.name = "autocannon-shell"
 cannonproj.piercing_damage = 100
@@ -11,11 +12,11 @@ cannonproj.action =
         {
           {
             type = "damage",
-            damage = { amount = 30 , type = "physical"} -- Base is 150, DPS of 100
+            damage = { amount = 45 , type = "physical"} -- Base is 150, DPS of 100
           },
           {
             type = "damage",
-            damage = { amount = 7.5 , type = "impact"} -- Base is 50 DPS of 33
+            damage = { amount = 12 , type = "impact"} -- Base is 50 DPS of 33
           }
         }
       }
@@ -36,8 +37,49 @@ cannonproj.animation =
 
 data:extend({ cannonproj })
 
+--Impacting Rocket
+local rocketproj = table.deepcopy(data.raw["projectile"]["rocket"])
+rocketproj.name = "impacting-rocket"
+rocketproj.action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "damage",
+            damage = { amount = 40 , type = "physical"} -- Base is 60 explosion, DPS of 60
+          },
+          {
+            type = "damage",
+            damage = { amount = 40 , type = "impact"}
+          },
+          {
+            type = "create-entity",
+            entity_name = "small-scorchmark",
+            check_buildability = true
+          }
+        }
+      }
+    }
+rocketproj.acceleration = 0.025
+rocketproj.animation =
+    {
+      filename = "__base__/graphics/entity/rocket/rocket.png",
+      tint = {r=1, g=0.46, b=0.27},
+      frame_count = 8,
+      line_length = 8,
+      width = 9,
+      height = 35,
+      shift = {0, 0},
+      priority = "high"
+    },
 
+data:extend({ rocketproj })
 
+--Pew pew
 local laserpurple = table.deepcopy(data.raw["projectile"]["laser"])
 laserpurple.name = "purple-laser"
 laserpurple.animation =
