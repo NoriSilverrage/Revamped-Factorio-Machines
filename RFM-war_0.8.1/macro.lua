@@ -1,0 +1,13 @@
+script.on_init(function()
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "adv-ammo-turret", "piercing-bullet-magazine", 10)
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "sniper-ammo-turret", "piercing-bullet-magazine", 10)
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "rocket-ammo-turret", "rocket", 10)
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "ac-ammo-turret", "autocannon-shell", 10)
+end)
+
+script.on_load(function()
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "adv-ammo-turret", "piercing-bullet-magazine", 10)
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "sniper-ammo-turret", "piercing-bullet-magazine", 10)
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "rocket-ammo-turret", "rocket", 10)
+   remote.call("Macromanaged_Turrets", "add_logistic_turret", "ac-ammo-turret", "autocannon-shell", 10)
+end)

@@ -1,8 +1,16 @@
-require "loader"
-local turretFillSet = {group="turrets", limits= {10}, "ammo-bullets"}
+script.on_init(function()
+      remote.call("af","setItemArray","ammo-ac",{"autocannon-shell","cannon-shell"})
+      remote.call("af","addToDefaultSets","adv-ammo-turret",{group="turrets", limits= {10}, "ammo-bullets"})
+      remote.call("af","addToDefaultSets","sniper-ammo-turret",{group="turrets", limits= {10}, "ammo-bullets"})
+      remote.call("af","addToDefaultSets","ac-ammo-turret",{group="turrets", limits= {10}, "ammo-ac"})
+      remote.call("af","addToDefaultSets","rocket-ammo-turret",{group="turrets", limits= {10}, "ammo-rockets"})
+      
+end)
 
-loader.extendItemArray {["ammo-shells"] = {"autocannon-shell"}}
-loader.addSets {["adv-ammo-turret"] = turretFillSet,["sniper-ammo-turret"] = turretFillSet}
-loader.addSets {["rocket-ammo-turret"]= {group="turrets", limits= {50}, "ammo-rockets" }}
-
-
+script.on_load(function()
+      remote.call("af","setItemArray","ammo-ac",{"autocannon-shell","cannon-shell"})
+      remote.call("af","addToDefaultSets","adv-ammo-turret",{group="turrets", limits= {10}, "ammo-bullets"})
+      remote.call("af","addToDefaultSets","sniper-ammo-turret",{group="turrets", limits= {10}, "ammo-bullets"})
+      remote.call("af","addToDefaultSets","ac-ammo-turret",{group="turrets", limits= {10}, "ammo-ac"})
+      remote.call("af","addToDefaultSets","rocket-ammo-turret",{group="turrets", limits= {10}, "ammo-rockets"})
+end)
