@@ -751,6 +751,34 @@ data:extend({ gate2 })
 
 
 
+data:extend({
+  {
+    type = "technology",
+    name = "reinforced-walls",
+    icon = modname.."/graphics/icons/reinforced-walls.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "reinforced-wall"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "reinforced-gate"
+      },
+    },
+    prerequisites = {"military-3","stone-walls","gates"},
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1},
+        {"alien-science-pack", 1},
+      },
+      time = 45
+    }
+})
 
-table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="reinforced-wall"})
-table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="reinforced-gate"})

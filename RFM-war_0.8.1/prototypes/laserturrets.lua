@@ -345,8 +345,8 @@ data:extend({
       {
         {"science-pack-1", 2},
         {"science-pack-2", 2},
-        {"science-pack-3", 1},
-        {"alien-science-pack", 2},
+        {"science-pack-3", 2},
+        {"alien-science-pack", 1},
       },
       time = 45
     },
