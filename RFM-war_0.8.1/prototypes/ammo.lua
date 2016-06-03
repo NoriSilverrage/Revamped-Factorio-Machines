@@ -3,7 +3,7 @@ data:extend(
    {
     type = "recipe",
     name = "autocannon-shell",
-    energy_required = 32,
+    energy_required = 24,
     enabled = nori_test_state,
     ingredients =
     {
@@ -35,7 +35,7 @@ data:extend(
     subgroup = "ammo",
     order = "d[cannon-shell]-c",
     stack_size = 100,
-    --magazine_size = 4,
+    magazine_size = 4,
     ammo_type =
     {
       category = "cannon-shell",
