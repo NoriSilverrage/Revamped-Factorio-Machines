@@ -12,11 +12,11 @@ cannonproj.action =
         {
           {
             type = "damage",
-            damage = { amount = 45 , type = "physical"} -- Base is 150, DPS of 100
+            damage = { amount = 50 , type = "physical"} -- Base is 150, DPS of 100
           },
           {
             type = "damage",
-            damage = { amount = 12 , type = "impact"} -- Base is 50 DPS of 33
+            damage = { amount = 15 , type = "impact"} -- Base is 50 DPS of 33
           }
         }
       }

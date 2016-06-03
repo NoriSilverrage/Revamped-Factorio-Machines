@@ -24,7 +24,7 @@ data:extend(
       {"rocket", 4},
       {"iron-plate", 1}
     },
-    result = "rocket"
+    result = "impacting-rocket"
   },
     
   {
@@ -68,7 +68,7 @@ data:extend(
     icon = modname.."/graphics/icons/impacting-rocket.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "ammo",
-    order = "d[rocket-launcher]-a[basic]-b",
+    order = "d[rocket-launcher]-c",
     stack_size = 100,
     magazine_size = 4,
     ammo_type =
@@ -80,7 +80,7 @@ data:extend(
         action_delivery =
         {
           type = "projectile",
-          projectile = "rocket",
+          projectile = "impacting-rocket",
           starting_speed = 0.1,
           source_effects =
           {

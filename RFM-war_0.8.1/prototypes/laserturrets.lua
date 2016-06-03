@@ -325,7 +325,8 @@ data:extend({
   {
     type = "technology",
     name = "adv-laser-turrets",
-    icon = modname.."/graphics/icons/ac-turret-tech.png",
+    icon = modname.."/graphics/icons/laser-turret-tech.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -349,5 +350,6 @@ data:extend({
         {"alien-science-pack", 1},
       },
       time = 45
-    },
+    }
+  }  
 })    

@@ -756,6 +756,7 @@ data:extend({
     type = "technology",
     name = "reinforced-walls",
     icon = modname.."/graphics/icons/reinforced-walls.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -780,5 +781,6 @@ data:extend({
       },
       time = 45
     }
+  }  
 })
 

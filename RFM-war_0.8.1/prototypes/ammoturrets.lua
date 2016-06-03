@@ -487,29 +487,24 @@ rocketammoturret.resistances =
 data:extend({ rocketammoturret })
 
 
---table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="adv-ammo-turret"})
---table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="sniper-ammo-turret"})
---table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="ac-ammo-turret"})
---table.insert(data.raw["technology"]["military-3"].effects,{type="unlock-recipe",recipe="rocket-ammo-turret"})
-
-
 data:extend({
   {
     type = "technology",
     name = "ac-gun-turret",
+    icon_size = 128,
     icon = modname.."/graphics/icons/ac-turret-tech.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "ac-aamo-turret"
+        recipe = "ac-ammo-turret"
       },
       {
         type = "unlock-recipe",
         recipe = "autocannon-shell"
       },
     },
-    prerequisites = {"military-3","tanks"},
+    prerequisites = {"military-3","tanks","turrets"},
     unit =
     {
       count = 100,
@@ -521,12 +516,13 @@ data:extend({
         {"alien-science-pack", 1},
       },
       time = 45
-    },
-    
+    }
+  },
   {
     type = "technology",
     name = "adv-gun-turret",
-    icon = modname.."/graphics/icons/adv-turret-tech",
+    icon_size = 128,
+    icon = modname.."/graphics/icons/adv-turret-tech.png",
     effects =
     {
       {
@@ -538,7 +534,7 @@ data:extend({
         recipe = "sniper-ammo-turret"
       },
     },
-    prerequisites = {"military-3"},
+    prerequisites = {"military-3","turrets"},
     unit =
     {
       count = 150,
@@ -550,12 +546,13 @@ data:extend({
         {"alien-science-pack", 1},
       },
       time = 45
-    },
-    
+    }
+  },
   {
     type = "technology",
     name = "rocket-gun-turret",
-    icon = modname.."/graphics/icons/rocket-turret-tech",
+    icon_size = 128,
+    icon = modname.."/graphics/icons/rocket-turret-tech.png",
     effects =
     {
       {
@@ -567,7 +564,7 @@ data:extend({
         recipe = "impacting-rocket"
       },
     },
-    prerequisites = {"military-3","rocketry"},
+    prerequisites = {"military-3","rocketry","turrets"},
     unit =
     {
       count = 100,
@@ -579,5 +576,6 @@ data:extend({
         {"alien-science-pack", 1},
       },
       time = 45
-    },
+    }
+   }
 })
