@@ -232,14 +232,14 @@ data:extend({
   {
     type = "recipe",
     name = "sniper-ammo-turret",
-    energy_required = 20,
+    energy_required = 30,
     enabled = nori_test_state,
     ingredients =
     {
         {"iron-gear-wheel", 10},
         {"advanced-circuit", 10},
         {"steel-plate", 10},
-        {"gun-turret", 1}
+        {"gun-turret", 2}
     },
     result = "sniper-ammo-turret",
 
@@ -255,7 +255,7 @@ data:extend({
         {"iron-gear-wheel", 10},
         {"advanced-circuit", 10},
         {"steel-plate", 10},
-        {"gun-turret", 2}
+        {"gun-turret", 1}
     },
     result = "ac-ammo-turret",
 
