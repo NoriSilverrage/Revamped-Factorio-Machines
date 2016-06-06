@@ -2,11 +2,11 @@ data:extend(
 {
 {
     type = "roboport-equipment",
-    name = "personal-roboport-equipment",
-    take_result = "personal-roboport-equipment",
+    name = "adv-personal-roboport-equipment",
+    take_result = "adv-personal-roboport-equipment",
     sprite =
     {
-      filename = "__base__/graphics/equipment/personal-roboport-equipment.png",
+      filename = modname.."/graphics/equipment/adv-personal-roboport-equipment.png",
       width = 64,
       height = 64,
       priority = "medium"
@@ -20,15 +20,15 @@ data:extend(
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "7MJ",
-      input_flow_limit = "700KW",
+      buffer_capacity = "12MJ",
+      input_flow_limit = "1200KW",
       usage_priority = "secondary-input"
     },
-    charging_energy = "200kW",
-    energy_consumption = "4kW",
+    charging_energy = "400kW",
+    energy_consumption = "8kW",
 
-    robot_limit = 10,
-    construction_radius = 15,
+    robot_limit = 20,
+    construction_radius = 20,
     spawn_and_station_height = 0.4,
     charge_approach_distance = 2.6,
 
@@ -58,8 +58,8 @@ data:extend(
     recharging_light = {intensity = 0.4, size = 5},
     stationing_offset = {0, -0.6},
     charging_station_shift = {0, 0.5},
-    charging_station_count = 2,
-    charging_distance = 1.6,
+    charging_station_count = 4,
+    charging_distance = 2,
     charging_threshold_distance = 5
   }
   

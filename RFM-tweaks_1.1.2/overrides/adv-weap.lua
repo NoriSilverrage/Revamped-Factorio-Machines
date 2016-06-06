@@ -1,7 +1,7 @@
 data.raw.recipe["sniper-rifle-magazine"].ingredients =
     {
       {"steel-plate", 5},
-	  {"copper-plate", 10},
+	  {"copper-plate", 20},
       {"iron-plate", 5}
     }
     

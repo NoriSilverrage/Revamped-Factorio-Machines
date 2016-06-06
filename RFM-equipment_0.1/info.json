@@ -1,0 +1,10 @@
+{
+  "name": "RFM-equipment",
+  "version": "0.0.1",
+  "title": "R.F.M. Equipment",
+  "author": "Nori",
+  "contact": "",
+  "homepage": "NA",
+  "description": "bleh",
+  "dependencies": ["base >= 0.12.0"]
+}
