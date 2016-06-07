@@ -637,6 +637,17 @@ data.raw.recipe["bob-robo-charge-port-large-3"].ingredients = {{"bob-robo-charge
 data.raw.recipe["bob-robo-charge-port-large-4"].ingredients = {{"bob-robo-charge-port-large-3", 1},{"steel-plate", 15},{"roboport-antenna-2", 1},{"roboport-chargepad-2", 9}}
 
 
+---Trains---
+
+data.raw["locomotive"]["diesel-locomotive-2"].max_speed = 1.4
+data.raw["locomotive"]["diesel-locomotive-2"].max_power = "700kW"
+data.raw["locomotive"]["diesel-locomotive-2"].friction_force = 0.00125
+data.raw["locomotive"]["diesel-locomotive-2"].air_resistance = 0.0015
+
+data.raw["locomotive"]["diesel-locomotive-3"].max_speed = 1.6
+data.raw["locomotive"]["diesel-locomotive-3"].max_power = "800kW"
+data.raw["locomotive"]["diesel-locomotive-3"].friction_force = 0.001
+data.raw["locomotive"]["diesel-locomotive-3"].air_resistance = 0.001
 
 ---- Energy ----
 --Boilers

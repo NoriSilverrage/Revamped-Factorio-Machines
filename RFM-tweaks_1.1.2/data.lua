@@ -18,3 +18,10 @@ require("prototypes.hardcrafting")
 require("prototypes.chemplant")
 require("prototypes.oil")
 require("prototypes.nuclear")
+
+if data.raw.player.player.build_distance < 24 then
+	data.raw.player.player.build_distance = 24
+	data.raw.player.player.reach_distance = 20
+	data.raw.player.player.reach_resource_distance = 20
+	data.raw.player.player.drop_item_distance = 20
+end	
