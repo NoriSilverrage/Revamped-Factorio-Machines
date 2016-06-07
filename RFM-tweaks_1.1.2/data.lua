@@ -14,10 +14,12 @@ require("overrides.tech")
 require("overrides.science")
 require("overrides.robominer")
 
-require("prototypes.hardcrafting")
 require("prototypes.chemplant")
-require("prototypes.oil")
+require("prototypes.hardcrafting")
+require("prototypes.kspower")
 require("prototypes.nuclear")
+require("prototypes.oil")
+
 
 if data.raw.player.player.build_distance < 24 then
 	data.raw.player.player.build_distance = 24

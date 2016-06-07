@@ -173,7 +173,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-b",
     place_result = "adv-ammo-turret",
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     stack_size = 50
   },
   
@@ -185,7 +185,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-c",
     place_result = "sniper-ammo-turret",
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     stack_size = 50
   },
     
@@ -197,7 +197,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-d",
     place_result = "ac-ammo-turret",
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     stack_size = 50
   },
   
@@ -209,7 +209,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-a[gun-turret]-e",
     place_result = "rocket-ammo-turret",
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     stack_size = 50
   },
 
@@ -217,7 +217,7 @@ data:extend({
     type = "recipe",
     name = "adv-ammo-turret",
     energy_required = 20,
-    enabled = nori_test_state,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -233,7 +233,7 @@ data:extend({
     type = "recipe",
     name = "sniper-ammo-turret",
     energy_required = 30,
-    enabled = nori_test_state,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -249,7 +249,7 @@ data:extend({
     type = "recipe",
     name = "ac-ammo-turret",
     energy_required = 20,
-    enabled = nori_test_state,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -265,7 +265,7 @@ data:extend({
     type = "recipe",
     name = "rocket-ammo-turret",
     energy_required = 20,
-    enabled = nori_test_state,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
         {"rocket-launcher", 1},

@@ -704,7 +704,8 @@ data.raw["boiler"]["boiler-4"].fluid_box =
       },
     }
 
---Steam Engines    
+--Steam Engines   
+data.raw.technology["steam-engine-generator-1"].unit.count = 100     
 data.raw.recipe["steam-engine-2"].ingredients =
     {
       {"steam-engine", 1},
@@ -723,7 +724,8 @@ data.raw["generator"]["steam-engine-2"].fluid_box =
         { position = {0, -3} },
       },
     }
-    
+
+data.raw.technology["steam-engine-generator-2"].unit.count = 200    
 data.raw.recipe["steam-engine-3"].ingredients =
     {
       {"steam-engine-2", 1},

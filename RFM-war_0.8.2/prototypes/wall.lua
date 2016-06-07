@@ -7,7 +7,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "a[wall]-a[reinforced-wall]",
     place_result = "reinforced-wall",
-	enabled = nori_test_state,
+	enabled = nori_test_rfm_war,
     stack_size = 100
   },
   
@@ -19,7 +19,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "a[wall]-b[reinforced-gate]",
     place_result = "reinforced-gate",
-	enabled = nori_test_state,
+	enabled = nori_test_rfm_war,
     stack_size = 50
   },
 
@@ -28,7 +28,7 @@ data:extend({
     type = "recipe",
     name = "reinforced-gate",
     energy_required = 2,
-    enabled = nori_test_state,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
        {"gate", 2},
@@ -43,7 +43,7 @@ data:extend({
     type = "recipe",
     name = "reinforced-wall",
     energy_required = 10,
-    enabled = nori_test_state,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
        {"stone-wall", 2},

@@ -4,7 +4,7 @@ data:extend(
     type = "recipe",
     name = "autocannon-shell",
     energy_required = 24,
-    enabled = nori_test_state,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
         {"cannon-shell", 4},
@@ -19,6 +19,7 @@ data:extend(
     name = "impacting-rocket",
     enabled = false,
     energy_required = 20,
+    enabled = nori_test_rfm_war,
     ingredients =
     {
       {"rocket", 4},

@@ -125,7 +125,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-b[laser-turret]-b",
     place_result = "adv-laser-turret",
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     stack_size = 50
   },
   
@@ -137,7 +137,7 @@ data:extend({
     subgroup = "defensive-structure",
     order = "b[turret]-b[laser-turret]-c",
     place_result = "sniper-laser-turret",
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     stack_size = 50
   },
     
@@ -146,7 +146,7 @@ data:extend({
     type = "recipe",
     name = "adv-laser-turret",
     energy_required = 20,
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     ingredients =
     {
         {"iron-gear-wheel", 10},
@@ -162,7 +162,7 @@ data:extend({
     type = "recipe",
     name = "sniper-laser-turret",
     energy_required = 30,
-    enable = nori_test_state,
+    enable = nori_test_rfm_war,
     ingredients =
     {
         {"iron-gear-wheel", 10},

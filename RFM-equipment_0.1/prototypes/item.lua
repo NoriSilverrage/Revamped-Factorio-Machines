@@ -9,7 +9,25 @@ data:extend(
       subgroup = "equipment",
       order = "e[robotics]-a[personal-roboport-equipment]-b",
       stack_size = 5
-    }
-  
-  
+    },
+    {
+      type = "item",
+      name = "big-personal-roboport-equipment",
+      icon = modname.."/graphics/icons/big-personal-roboport-equipment.png",
+      placed_as_equipment_result = "big-personal-roboport-equipment",
+      flags = {"goes-to-main-inventory"},
+      subgroup = "equipment",
+      order = "e[robotics]-a[personal-roboport-equipment]-c",
+      stack_size = 5
+    },
+    {
+      type = "item",
+      name = "small-personal-roboport-equipment",
+      icon = modname.."/graphics/icons/small-personal-roboport-equipment.png",
+      placed_as_equipment_result = "small-personal-roboport-equipment",
+      flags = {"goes-to-main-inventory"},
+      subgroup = "equipment",
+      order = "e[robotics]-a[personal-roboport-equipment]-d",
+      stack_size = 5
+    },
 })

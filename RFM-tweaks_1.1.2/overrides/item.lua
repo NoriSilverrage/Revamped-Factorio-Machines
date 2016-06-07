@@ -25,3 +25,4 @@ data.raw.item["small-lamp"].stack_size = 100
 data.raw.item["small-electric-pole"].stack_size = 100
 data.raw.item["medium-electric-pole"].stack_size = 100
 data.raw.item["big-electric-pole"].stack_size = 100
+data.raw.item["repair-pack"].stack_size = 100
