@@ -1,3 +1,4 @@
+require("config")
 require("overrides.5dim")
 require("overrides.adv-weap")
 require("overrides.ammo")
@@ -16,7 +17,7 @@ require("overrides.robominer")
 
 require("prototypes.chemplant")
 require("prototypes.hardcrafting")
-require("prototypes.kspower")
+--require("prototypes.kspower")
 require("prototypes.nuclear")
 require("prototypes.oil")
 

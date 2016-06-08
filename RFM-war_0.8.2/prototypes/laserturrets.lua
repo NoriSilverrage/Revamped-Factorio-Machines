@@ -149,7 +149,7 @@ data:extend({
     enable = nori_test_rfm_war,
     ingredients =
     {
-        {"iron-gear-wheel", 10},
+        {"battery", 20},
         {"advanced-circuit", 10},
         {"steel-plate", 10},
         {"laser-turret", 1}
@@ -165,9 +165,9 @@ data:extend({
     enable = nori_test_rfm_war,
     ingredients =
     {
-        {"iron-gear-wheel", 10},
+        {"battery", 30},
         {"advanced-circuit", 10},
-        {"steel-plate", 10},
+        {"steel-plate", 5},
         {"laser-turret", 2}
     },
     result = "sniper-laser-turret",

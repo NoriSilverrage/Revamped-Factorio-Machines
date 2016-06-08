@@ -2,7 +2,7 @@ data:extend({
  {
     type = "item",
     name = "crusher-2",
-    icon = "__custom__/graphics/icons/crusher-2.png",
+    icon = modname.."/graphics/icons/crusher-2.png",
     flags = {"goes-to-quickbar"},
     subgroup = "advanced-processing-machine",
     order = "f",
@@ -13,7 +13,7 @@ data:extend({
   {
     type = "item",
     name = "crusher-3",
-    icon = "__custom__/graphics/icons/crusher-3.png",
+    icon = modname.."/graphics/icons/crusher-3.png",
     flags = {"goes-to-quickbar"},
     subgroup = "advanced-processing-machine",
     order = "f",
@@ -24,7 +24,7 @@ data:extend({
 --  {
 --    type = "item",
 --    name = "crusher-4",
---    icon = "__custom__/graphics/icons/crusher-4.png",
+--    icon = modname.."/graphics/icons/crusher-4.png",
 --    flags = {"goes-to-quickbar"},
 --    subgroup = "advanced-processing-machine",
 --    order = "f",
@@ -163,8 +163,8 @@ crusher2.energy_usage = "120kW"
 crusher2.minable.result = "crusher-2"
 crusher2.crafting_speed = 1.5
 crusher2.fast_replaceable_group = "assembling-machine"
-crusher2.icon =  "__custom__/graphics/icons/crusher-2.png"
-crusher2.animation.filename="__custom__/graphics/entity/crusher/crusher-base-2.png"
+crusher2.icon =  modname.."/graphics/icons/crusher-2.png"
+crusher2.animation.filename=modname.."/graphics/entity/crusher/crusher-base-2.png"
 data:extend({ crusher2 })
 
 -- Mk 3
@@ -179,8 +179,8 @@ crusher3.module_specification =
         module_info_icon_shift = {0, 0.8}
     }
 crusher3.fast_replaceable_group = "assembling-machine"
-crusher3.icon =  "__custom__/graphics/icons/crusher-3.png"
-crusher3.animation.filename="__custom__/graphics/entity/crusher/crusher-base-3.png"
+crusher3.icon =  modname.."/graphics/icons/crusher-3.png"
+crusher3.animation.filename=modname.."/graphics/entity/crusher/crusher-base-3.png"
 data:extend({ crusher3 })
 
 ---- Mk 4
@@ -195,8 +195,8 @@ data:extend({ crusher3 })
 --        module_info_icon_shift = {0, 0.8}
 --    }
 --crusher4.fast_replaceable_group = "furnace"
---crusher4.icon =  "__custom__/graphics/icons/crusher-4.png"
---crusher4.animation.filename="__custom__/graphics/entity/crusher/crusher-base-4.png"
+--crusher4.icon =  modname.."/graphics/icons/crusher-4.png"
+--crusher4.animation.filename=modname.."/graphics/entity/crusher/crusher-base-4.png"
 --data:extend({ crusher4 })
 
 
@@ -207,7 +207,7 @@ pulverizer2.energy_usage = "210kW"
 pulverizer2.crafting_speed = 1.5
 pulverizer2.minable.result = "pulverizer-2"
 pulverizer2.fast_replaceable_group = "assembling-machine"
-pulverizer2.animation.filename="__custom__/graphics/entity/crusher/crusher-base-2.png"
+pulverizer2.animation.filename=modname.."/graphics/entity/crusher/crusher-base-2.png"
 data:extend({ pulverizer2 })
 
 -- Mk3
@@ -224,7 +224,7 @@ pulverizer3.module_specification =
         module_info_multi_row_initial_height_modifier = -0.3
     }
 pulverizer3.fast_replaceable_group = "assembling-machine"
-pulverizer3.animation.filename="__custom__/graphics/entity/crusher/crusher-base-3.png"
+pulverizer3.animation.filename=modname.."/graphics/entity/crusher/crusher-base-3.png"
 data:extend({ pulverizer3 })
 
 ---- Mk4
@@ -241,7 +241,7 @@ data:extend({ pulverizer3 })
 --        module_info_multi_row_initial_height_modifier = -0.3
 --    }
 --pulverizer4.fast_replaceable_group = "assembling-machine"
---pulverizer4.animation.filename="__custom__/graphics/entity/crusher/crusher-base-4.png"
+--pulverizer4.animation.filename=modname.."/graphics/entity/crusher/crusher-base-4.png"
 --data:extend({ pulverizer4 })
 
 table.insert(data.raw["technology"]["advanced-material-processing-2"].effects,{type="unlock-recipe",recipe="crusher-2"})

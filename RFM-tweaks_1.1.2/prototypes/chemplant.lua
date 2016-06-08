@@ -6,7 +6,7 @@ return {
   layers =
   {
     {
-      filename = "__custom__/graphics/entity/chemical-plants/chemical-plant.png",
+      filename = modname.."/graphics/entity/chemical-plants/chemical-plant.png",
       x = x,
       width = 156,
       height = 141,
@@ -14,7 +14,7 @@ return {
       shift = {0.5, -0.078125}
     },
     {
-      filename = "__custom__/graphics/entity/chemical-plants/chemical-plant-mask.png",
+      filename = modname.."/graphics/entity/chemical-plants/chemical-plant-mask.png",
       x = x,
       width = 156,
       height = 141,
@@ -42,30 +42,30 @@ data:extend({
   {
     type = "item",
     name = "chemical-plant-2",
-    icon = "__custom__/graphics/icons/chemical-plant-2.png",
+    icon = modname.."/graphics/icons/chemical-plant-2.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
-    order = "e[chemical-plant-2]",
+    order = "e[chemical-plant]-b",
     place_result = "chemical-plant-2",
     stack_size = 50
   },
   {
     type = "item",
     name = "chemical-plant-3",
-    icon = "__custom__/graphics/icons/chemical-plant-3.png",
+    icon = modname.."/graphics/icons/chemical-plant-3.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
-    order = "e[chemical-plant-3]",
+    order = "e[chemical-plant]-c",
     place_result = "chemical-plant-3",
     stack_size = 50
   },
   {
     type = "item",
     name = "chemical-plant-4",
-    icon = "__custom__/graphics/icons/chemical-plant-4.png",
+    icon = modname.."/graphics/icons/chemical-plant-4.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
-    order = "e[chemical-plant-4]",
+    order = "e[chemical-plant]-d",
     place_result = "chemical-plant-4",
     stack_size = 50
   },
@@ -123,7 +123,7 @@ data:extend({
 {
     type = "assembling-machine",
     name = "chemical-plant-2",
-    icon = "__custom__/graphics/icons/chemical-plant-2.png",
+    icon = modname.."/graphics/icons/chemical-plant-2.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-plant-2"},
     max_health = 350,
@@ -185,7 +185,7 @@ data:extend({
         east_position = {0.05, -1.46},
         animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-green-patch.png",
           frame_count = 35,
           width = 17,
           height = 12,
@@ -199,14 +199,14 @@ data:extend({
         east_position = {0.05, -0.96},
         north_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           frame_count = 1,
           width = 21,
           height = 10
         },
         west_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           x = 21,
           frame_count = 1,
           width = 21,
@@ -214,7 +214,7 @@ data:extend({
         },
         south_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           x = 42,
           frame_count = 1,
           width = 21,
@@ -239,7 +239,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "chemical-plant-3",
-    icon = "__custom__/graphics/icons/chemical-plant-3.png",
+    icon = modname.."/graphics/icons/chemical-plant-3.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-plant-3"},
     max_health = 400,
@@ -301,7 +301,7 @@ data:extend({
         east_position = {0.05, -1.46},
         animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-green-patch.png",
           frame_count = 35,
           width = 17,
           height = 12,
@@ -315,14 +315,14 @@ data:extend({
         east_position = {0.05, -0.96},
         north_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           frame_count = 1,
           width = 21,
           height = 10
         },
         west_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           x = 21,
           frame_count = 1,
           width = 21,
@@ -330,7 +330,7 @@ data:extend({
         },
         south_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           x = 42,
           frame_count = 1,
           width = 21,
@@ -355,7 +355,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "chemical-plant-4",
-    icon = "__custom__/graphics/icons/chemical-plant-4.png",
+    icon = modname.."/graphics/icons/chemical-plant-4.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-plant-4"},
     max_health = 500,
@@ -417,7 +417,7 @@ data:extend({
         east_position = {0.05, -1.46},
         animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-green-patch.png",
           frame_count = 35,
           width = 17,
           height = 12,
@@ -431,14 +431,14 @@ data:extend({
         east_position = {0.05, -0.96},
         north_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           frame_count = 1,
           width = 21,
           height = 10
         },
         west_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           x = 21,
           frame_count = 1,
           width = 21,
@@ -446,7 +446,7 @@ data:extend({
         },
         south_animation =
         {
-          filename = "__custom__/graphics/entity/chemical-plants/boiling-window-green-patch.png",
+          filename = modname.."/graphics/entity/chemical-plants/boiling-window-green-patch.png",
           x = 42,
           frame_count = 1,
           width = 21,
@@ -471,7 +471,7 @@ data:extend({
   {
     type = "technology",
     name = "chemical-processing-1",
-    icon = "__custom__/graphics/icons/technology/chemistry.png",
+    icon = modname.."/graphics/icons/technology/chemistry.png",
     prerequisites =
     {
       "advanced-oil-processing",
@@ -501,7 +501,7 @@ data:extend({
   {
     type = "technology",
     name = "chemical-processing-2",
-    icon = "__custom__/graphics/icons/technology/chemistry.png",
+    icon = modname.."/graphics/icons/technology/chemistry.png",
     prerequisites =
     {
       "chemical-processing-1",
@@ -531,7 +531,7 @@ data:extend({
   {
     type = "technology",
     name = "chemical-processing-3",
-    icon = "__custom__/graphics/icons/technology/chemistry.png",
+    icon = modname.."/graphics/icons/technology/chemistry.png",
     prerequisites =
     {
       "chemical-processing-2",

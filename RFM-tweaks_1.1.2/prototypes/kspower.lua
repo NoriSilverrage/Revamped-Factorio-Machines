@@ -67,7 +67,7 @@ data:extend({
       }
     },
     prerequisites = {"petroleum-generator"},
-    upgrade = true
+    upgrade = true,
     unit =
     {
       count = 225,
@@ -79,7 +79,7 @@ data:extend({
   ---***Tech 3**---
   {
     type = "technology",
-    name = "petroleum-generator",
+    name = "petroleum-generator-3",
     icon = "__KS_Power__/graphics/diesel-generator-t1.png",
     icon_size = 128,
     effects =
@@ -87,10 +87,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "petroleum-generator-3"
-      },
+      }
     },
     prerequisites = {"petroleum-generator-2"},
-    upgrade = true
+    upgrade = true,
     unit =
     {
       count = 300,
@@ -106,18 +106,16 @@ data:extend({
 local diesel2 = table.deepcopy(data.raw["generator"]["petroleum-generator"])
 diesel2.name = "petroleum-generator-2"
 diesel2.effectivity = 600
-diesel2.fluid_usage_per_tick = 0.00375
+diesel2.fluid_usage_per_tick = 0.00125
 diesel2.max_health = 400
 diesel2.minable.result = "petroleum-generator-2"
-diesel2.fast_replaceable_group = "generator"
 data:extend({ diesel2 })
 
 -- Mk 3
 local diesel3 = table.deepcopy(data.raw["generator"]["petroleum-generator"])
 diesel3.name = "petroleum-generator-3"
 diesel3.effectivity = 1200
-diesel3.fluid_usage_per_tick = 0.0025
+diesel3.fluid_usage_per_tick = 0.000625
 diesel3.max_health = 500
 diesel3.minable.result = "petroleum-generator-3"
-diesel3.fast_replaceable_group = "generator"
 data:extend({ diesel3 })

@@ -3,20 +3,20 @@ data:extend({
  {
     type = "item",
     name = "oil-refinery-mk2",
-    icon = "__base__/graphics/icons/oil-refinery.png",
+    icon = modname.."/graphics/icons/oil-refinery-mk2.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
-    order = "c-a",
+    order = "d[refinery]-b",
     place_result = "oil-refinery-mk2",
     stack_size = 10
   },
   {
     type = "item",
     name = "oil-refinery-mk3",
-    icon = "__base__/graphics/icons/oil-refinery.png",
+    icon = modname.."/graphics/icons/oil-refinery-mk3.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
-    order = "c-b",
+    order = "d[refinery]-c",
     place_result = "oil-refinery-mk3",
     stack_size = 10
   },
@@ -55,7 +55,7 @@ data:extend({
  {
     type = "assembling-machine",
     name = "oil-refinery-mk2",
-    icon = "__base__/graphics/icons/oil-refinery.png",
+    icon = modname.."/graphics/icons/oil-refinery-mk2.png",
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "oil-refinery-mk2"},
     max_health = 600,
@@ -83,7 +83,7 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk2.png",
         width = 337,
         height = 255,
         frame_count = 1,
@@ -91,7 +91,7 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk2.png",
         x = 337,
         width = 337,
         height = 255,
@@ -100,7 +100,7 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk2.png",
         x = 674,
         width = 337,
         height = 255,
@@ -109,7 +109,7 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk2.png",
         x = 1011,
         width = 337,
         height = 255,
@@ -185,7 +185,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "oil-refinery-mk3",
-    icon = "__base__/graphics/entity/oil-refinery/oil-refinery.png",
+    icon = modname.."/graphics/icons/oil-refinery-mk3.png",
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "oil-refinery-mk3"},
     max_health = 900,
@@ -213,7 +213,7 @@ data:extend({
     {
       north =
       {
-        filename = "__custom__/graphics/entity/machine/oil-refinery-mk3.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk3.png",
         width = 337,
         height = 255,
         frame_count = 1,
@@ -221,7 +221,7 @@ data:extend({
       },
       east =
       {
-        filename = "__custom__/graphics/entity/machine/oil-refinery-mk3.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk3.png",
         x = 337,
         width = 337,
         height = 255,
@@ -230,7 +230,7 @@ data:extend({
       },
       south =
       {
-        filename = "__custom__/graphics/entity/machine/oil-refinery-mk3.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk3.png",
         x = 674,
         width = 337,
         height = 255,
@@ -239,7 +239,7 @@ data:extend({
       },
       west =
       {
-        filename = "__custom__/graphics/entity/machine/oil-refinery-mk3.png",
+        filename = modname.."/graphics/entity/machine/oil-refinery-mk3.png",
         x = 1011,
         width = 337,
         height = 255,
