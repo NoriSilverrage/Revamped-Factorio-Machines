@@ -6,7 +6,7 @@ data:extend(
   {
     type = "technology",
     name = "adv-personal-roboport-equipment",
-    icon = modname.."/graphics/icons/personal-roboport-equipment.png",
+    icon = modname.."/graphics/icons/personal-roboport-equipment-tech.png",
     effects =
     {
       {
