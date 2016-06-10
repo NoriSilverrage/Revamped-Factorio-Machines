@@ -35,7 +35,7 @@ data:extend(
     energy_required = 10,
     ingredients =
     {
-      {"processing-unit", 4},
+      {"processing-unit", 5},  
       {"iron-gear-wheel", 16},
       {"steel-plate", 8},
       {"battery", 18},
@@ -65,7 +65,7 @@ data:extend(
     ingredients =
     {
       {"small-personal-roboport-equipment", 2},
-      {"processing-unit", 4},
+      {"processing-unit", 5},
       {"steel-plate", 5},
       {"battery", 12},
     },
