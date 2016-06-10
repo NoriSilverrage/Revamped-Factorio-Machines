@@ -23,7 +23,7 @@ data:extend(
     {
       type = "item",
       name = "small-personal-roboport-equipment",
-      icon = modname.."/graphics/icons/adv-small-personal-roboport-equipment.png",
+      icon = modname.."/graphics/icons/small-personal-roboport-equipment.png",
       placed_as_equipment_result = "small-personal-roboport-equipment",
       flags = {"goes-to-main-inventory"},
       subgroup = "equipment",
