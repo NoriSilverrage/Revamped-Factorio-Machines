@@ -9,8 +9,8 @@ data:extend(
     {
       {"personal-roboport-equipment", 2},
       {"processing-unit", 10},
-      {"steel-plate", 20},
-      {"battery", 20},
+      {"steel-plate", 10},
+      {"battery", 15},
     },
     result = "adv-personal-roboport-equipment"
   },
@@ -23,8 +23,8 @@ data:extend(
     {
       {"personal-roboport-equipment", 2},
       {"processing-unit", 5},
-      {"steel-plate", 5},
-      {"battery", 10},
+      {"steel-plate", 10},
+      {"battery", 15},
     },
     result = "big-personal-roboport-equipment"
   },
@@ -36,9 +36,9 @@ data:extend(
     ingredients =
     {
       {"processing-unit", 4},
-      {"iron-gear-wheel", 10},
-      {"steel-plate", 5},
-      {"battery", 12},
+      {"iron-gear-wheel", 16},
+      {"steel-plate", 8},
+      {"battery", 18},
     },
     result = "small-personal-roboport-equipment"
   },
@@ -51,9 +51,9 @@ data:extend(
     ingredients =
     {
       {"big-personal-roboport-equipment", 2},
-      {"processing-unit", 5},
-      {"steel-plate", 5},
-      {"battery", 10},
+      {"processing-unit", 10},
+      {"steel-plate", 10},
+      {"battery", 15},
     },
     result = "adv-big-personal-roboport-equipment"
   },
