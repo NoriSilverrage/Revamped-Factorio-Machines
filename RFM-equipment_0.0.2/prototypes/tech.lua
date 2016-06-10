@@ -7,6 +7,7 @@ data:extend(
     type = "technology",
     name = "adv-personal-roboport-equipment",
     icon = modname.."/graphics/icons/personal-roboport-equipment-tech.png",
+    icon_size = 128,
     effects =
     {
       {

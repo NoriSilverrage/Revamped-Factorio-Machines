@@ -136,7 +136,7 @@ data:extend(
         take_result = "adv-big-personal-roboport-equipment",
         sprite =
         {
-          filename = modname.."/graphics/equipment/big-personal-roboport-equipment.png",
+          filename = modname.."/graphics/equipment/adv-big-personal-roboport-equipment.png",
           width = 96,
           height = 96,
           priority = "medium"
