@@ -93,10 +93,5 @@ data:extend(
     },
 
   },
-  
-  
-  
-  
-  ----****Large ammo crates***----
-  
+
 })

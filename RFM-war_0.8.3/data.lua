@@ -5,3 +5,5 @@ require("prototypes.cannon-upgrades")
 require("prototypes.laserturrets")
 require("prototypes.projectile")
 require("prototypes.wall")
+
+require("prototypes.large-ammo")
