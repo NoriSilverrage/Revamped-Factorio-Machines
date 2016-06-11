@@ -3,7 +3,7 @@
 vanillachanges = true
 
 --Variable for testing recipes/items. Don't change.
-nori_test_rfm_war = true
+nori_test_rfm_war = false
 
 --Variable for Mod name. Don't change.
 modname="__RFM-war__"

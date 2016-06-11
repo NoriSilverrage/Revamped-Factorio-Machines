@@ -296,3 +296,10 @@ data:extend(
   },
 
 })
+
+table.insert(data.raw["technology"]["military-2"].effects,{type="unlock-recipe",recipe="large-basic-bullet-magazine"})
+table.insert(data.raw["technology"]["military-2"].effects,{type="unlock-recipe",recipe="large-piercing-bullet-magazine"})
+table.insert(data.raw["technology"]["flame-thrower"].effects,{type="unlock-recipe",recipe="large-flame-thrower-ammo"})
+table.insert(data.raw["technology"]["rocketry"].effects,{type="unlock-recipe",recipe="large-rocket"})
+table.insert(data.raw["technology"]["explosive-rocketry"].effects,{type="unlock-recipe",recipe="large-explosive-rocket"})
+table.insert(data.raw["technology"]["rocket-gun-turret"].effects,{type="unlock-recipe",recipe="large-impacting-rocket"})
