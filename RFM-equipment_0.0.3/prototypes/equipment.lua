@@ -222,7 +222,7 @@ data:extend(
         energy_consumption = "1kW",
 
         robot_limit = 3,
-        construction_radius = 8,
+        construction_radius = 7.5,
         spawn_and_station_height = 0.4,
         charge_approach_distance = 2.6,
 
@@ -286,7 +286,7 @@ data:extend(
         energy_consumption = "1.5kW",
 
         robot_limit = 5,
-        construction_radius = 12,
+        construction_radius = 10,
         spawn_and_station_height = 0.4,
         charge_approach_distance = 2.6,
 
@@ -316,7 +316,7 @@ data:extend(
         recharging_light = {intensity = 0.4, size = 5},
         stationing_offset = {0, -0.6},
         charging_station_shift = {0, 0.5},
-        charging_station_count = 2,
+        charging_station_count = 1,
         charging_distance = 1.6,
         charging_threshold_distance = 5
     },

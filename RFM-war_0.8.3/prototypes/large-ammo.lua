@@ -244,7 +244,7 @@ data:extend(
     type = "recipe",
     name = "large-flame-thrower-ammo",
     category = "chemistry",
-    enabled = false,
+    enabled = nori_test_rfm_war,
     energy_required = 3,
     ingredients =
     {
