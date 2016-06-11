@@ -17,7 +17,6 @@ data:extend(
   {
     type = "recipe",
     name = "impacting-rocket",
-    enabled = false,
     energy_required = 20,
     enabled = nori_test_rfm_war,
     ingredients =

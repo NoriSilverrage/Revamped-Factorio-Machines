@@ -221,8 +221,12 @@ data:extend(
   {
     type = "recipe",
     name = "large-basic-bullet-magazine",
-    energy_required = 2,
-    ingredients = {{"iron-plate", 2}},
+    energy_required = 15,
+    ingredients = 
+    {
+        {"steel-plate", 5},
+        {"basic-bullet-magazine", 50}
+    },
     result = "large-basic-bullet-magazine",
     result_count = 1
   },
@@ -230,11 +234,11 @@ data:extend(
     type = "recipe",
     name = "large-piercing-bullet-magazine",
     enabled = nori_test_rfm_war,
-    energy_required = 3,
+    energy_required = 25,
     ingredients =
     {
-      {"copper-plate", 5},
-      {"steel-plate", 1}
+        {"steel-plate", 5},
+        {"piercing-bullet-magazine", 50}
     },
     result = "large-piercing-bullet-magazine"
   },
@@ -243,14 +247,12 @@ data:extend(
   {
     type = "recipe",
     name = "large-flame-thrower-ammo",
-    category = "chemistry",
     enabled = nori_test_rfm_war,
-    energy_required = 3,
+    energy_required = 25,
     ingredients =
     {
-      {type="item", name="iron-plate", amount=5},
-      {type="fluid", name="light-oil", amount=2.5},
-      {type="fluid", name="heavy-oil", amount=2.5}
+        {"steel-plate", 5},
+        {"flame-thrower-ammo", 100}
     },
     result = "large-flame-thrower-ammo"
   },
@@ -259,12 +261,11 @@ data:extend(
     type = "recipe",
     name = "large-rocket",
     enabled = nori_test_rfm_war,
-    energy_required = 8,
+    energy_required = 50,
     ingredients =
     {
-      {"electronic-circuit", 1},
-      {"explosives", 2},
-      {"iron-plate", 2}
+        {"steel-plate", 5},
+        {"rocket", 100}
     },
     result = "large-rocket"
   },
@@ -272,11 +273,11 @@ data:extend(
     type = "recipe",
     name = "large-explosive-rocket",
     enabled = nori_test_rfm_war,
-    energy_required = 8,
+    energy_required = 50,
     ingredients =
     {
-      {"rocket", 1},
-      {"explosives", 5}
+        {"steel-plate", 5},
+        {"explosive-rocket", 100}
     },
     result = "large-explosive-rocket"
   },
@@ -285,12 +286,11 @@ data:extend(
     type = "recipe",
     name = "large-impacting-rocket",
     enabled = nori_test_rfm_war,
-    energy_required = 20,
-    enabled = nori_test_rfm_war,
+    energy_required = 50,
     ingredients =
     {
-      {"rocket", 4},
-      {"iron-plate", 1}
+        {"steel-plate", 5},
+        {"impacting-rocket", 25}
     },
     result = "large-impacting-rocket"
   },
