@@ -109,11 +109,11 @@ data:extend(
           {
             type = "flame-thrower",
             explosion = "flame-thrower-explosion",
-            direction_deviation = 0.07,
-            speed_deviation = 0.1,
-            starting_frame_deviation = 0.07,
-            projectile_starting_speed = 0.5,
-            starting_distance = 0.6,
+                direction_deviation = 0.05,
+                speed_deviation = 0.22,
+                starting_frame_deviation = 0.10,
+                projectile_starting_speed = 0.60,
+                starting_distance = 0.7,
           }
         }
       }

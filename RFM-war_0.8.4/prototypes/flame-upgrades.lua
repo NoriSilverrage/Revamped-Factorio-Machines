@@ -4,6 +4,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-damage-1",
     icon = modname.."/graphics/icons/flame-damage.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -30,6 +31,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-damage-2",
     icon = modname.."/graphics/icons/flame-damage.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -56,6 +58,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-damage-3",
     icon = modname.."/graphics/icons/flame-damage.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -82,6 +85,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-damage-4",
     icon = modname.."/graphics/icons/flame-damage.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -109,6 +113,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-damage-5",
     icon = modname.."/graphics/icons/flame-damage.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -137,6 +142,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-damage-6",
     icon = modname.."/graphics/icons/flame-damage.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -165,6 +171,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-speed-1",
     icon = modname.."/graphics/icons/flame-speed.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -190,6 +197,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-speed-2",
     icon = modname.."/graphics/icons/flame-speed.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -216,6 +224,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-speed-3",
     icon = modname.."/graphics/icons/flame-speed.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -242,6 +251,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-speed-4",
     icon = modname.."/graphics/icons/flame-speed.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -269,6 +279,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-speed-5",
     icon = modname.."/graphics/icons/flame-speed.png",
+    icon_size = 128,
     effects =
     {
       {
@@ -297,6 +308,7 @@ data:extend(
     type = "technology",
     name = "nori-flame-speed-6",
     icon = modname.."/graphics/icons/flame-speed.png",
+    icon_size = 128,
     effects =
     {
       {
