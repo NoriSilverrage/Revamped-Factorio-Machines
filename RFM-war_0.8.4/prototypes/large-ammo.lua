@@ -112,7 +112,7 @@ data:extend(
             direction_deviation = 0.07,
             speed_deviation = 0.1,
             starting_frame_deviation = 0.07,
-            projectile_starting_speed = 0.2,
+            projectile_starting_speed = 0.5,
             starting_distance = 0.6,
           }
         }
