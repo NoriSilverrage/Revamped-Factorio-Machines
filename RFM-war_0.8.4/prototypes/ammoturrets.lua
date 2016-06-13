@@ -217,18 +217,6 @@ data:extend({
     enable = nori_test_rfm_war,
     stack_size = 50
   },
-  
---  {
---    type = "item",
---    name = "flame-ammo-turret",
---    icon = modname.."/graphics/icons/rocket-gun-turret.png",
---    flags = {"goes-to-quickbar"},
---    subgroup = "defensive-structure",
---    order = "b[turret]-a[gun-turret]-f",
---    place_result = "flame-ammo-turret",
---    enable = true,
---    stack_size = 50
---  },
 
   {
     type = "recipe",
@@ -293,22 +281,6 @@ data:extend({
     result = "rocket-ammo-turret",
 
   },
-  
---  {
---    type = "recipe",
---    name = "flame-ammo-turret",
---    energy_required = 20,
---    enabled = true,
---    ingredients =
---    {
---        {"electronic-circuit", 10},
---        {"iron-plate", 10},
---        {"gun-turret", 1}
---    },
---    result = "flame-ammo-turret",
---
---  },
-  
   
 })
 
@@ -517,85 +489,6 @@ rocketammoturret.resistances =
       }
     }
 data:extend({ rocketammoturret })
-
-
---** Ammo Flamer Turret **--
-
---local flameammoturret = table.deepcopy(data.raw["ammo-turret"]["gun-turret"])
---flameammoturret.name = "flame-ammo-turret"
---flameammoturret.folded_animation = nori_gun_turret_extension{frame_count=1, line_length = 1, type = "gun", tint = lightorange}
---flameammoturret.preparing_animation = nori_gun_turret_extension{type = "gun", tint = lightorange}
---flameammoturret.folding_animation = nori_gun_turret_extension{run_mode = "backward", type = "gun", tint = lightorange}
---flameammoturret.prepared_animation = nori_gun_turret_attack{frame_count=1, type = "gun", tint = lightorange}
---flameammoturret.attacking_animation = nori_gun_turret_attack{type = "gun", tint = lightorange}
---flameammoturret.base_picture = nori_gun_turret_base{type = "gun", base = darkorange, mask = orange}
---flameammoturret.max_health = 1000
---flameammoturret.attack_parameters =
---    {
---      type = "projectile",
---      ammo_category = "flame-thrower",
---      cooldown = 2,
---      damage_modifier = 2,
---      movement_slow_down_factor = 0,
---      projectile_creation_distance = 0.6,
---      range = 20,
---      cyclic_sound =
---      {
---        begin_sound =
---        {
---          {
---            filename = "__base__/sound/fight/flamethrower-start.ogg",
---            volume = 0.7
---          }
---        },
---        middle_sound =
---        {
---          {
---            filename = "__base__/sound/fight/flamethrower-mid.ogg",
---            volume = 0.7
---          }
---        },
---        end_sound =
---        {
---          {
---            filename = "__base__/sound/fight/flamethrower-end.ogg",
---            volume = 0.7
---          }
---        }
---      }
---    }
---flameammoturret.inventory_size = 1
---flameammoturret.automated_ammo_count = 10
---flameammoturret.minable.result = "flame-ammo-turret"
---flameammoturret.fast_replaceable_group = "turret"
---flameammoturret.resistances =
---    {
---      {
---        type = "physical",
---        percent = 50
---      },
---      {
---        type = "acid",
---        percent = 25
---      },
---      {
---        type = "poison",
---        percent = 25
---      },
---      {
---        type = "fire",
---        percent = 100
---      },
---      {
---        type = "explosion",
---        percent = 90
---      },
---      {
---        type = "impact",
---        percent = 35
---      }
---    }
---data:extend({ flameammoturret })
 
 
 data:extend({
