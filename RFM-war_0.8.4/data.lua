@@ -8,3 +8,7 @@ require("prototypes.wall")
 
 require("prototypes.flame-upgrades")
 require("prototypes.large-ammo")
+
+if upgradedweapons == true then
+    require("prototypes.upgrades")
+end

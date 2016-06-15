@@ -2,6 +2,9 @@
 --True for changes to vanilla wall resistances, Gun Turret range, health and resistances and Laser Turret Resistances
 vanillachanges = true
 
+--Adds Extra Upgrades for weapons and turrets
+upgradedweapons = true
+
 --Variable for testing recipes/items. Don't change.
 nori_test_rfm_war = false
 
