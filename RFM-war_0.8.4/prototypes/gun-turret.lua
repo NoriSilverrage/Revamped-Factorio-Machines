@@ -15,3 +15,12 @@ data.raw["ammo-turret"]["gun-turret"].resistances =
         percent = 20
       },
     }
+    
+data.raw["electric-turret"]["laser-turret"].energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "14000kJ",
+      input_flow_limit = "4800kW",
+      drain = "24kW",
+      usage_priority = "primary-input"
+    }

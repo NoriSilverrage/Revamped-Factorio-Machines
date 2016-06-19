@@ -187,8 +187,8 @@ advlaserturret.minable.result = "adv-laser-turret"
 advlaserturret.energy_source =
     {
       type = "electric",
-      buffer_capacity = "4801kJ",
-      input_flow_limit = "12000kW",
+      buffer_capacity = "20881kJ",
+      input_flow_limit = "7200kW",
       drain = "36kW",
       usage_priority = "primary-input"
     }
@@ -252,7 +252,7 @@ data:extend({ advlaserturret })
 
 local sniperlaserturret = table.deepcopy(data.raw["electric-turret"]["laser-turret"])
 sniperlaserturret.name = "sniper-laser-turret"
-sniperlaserturret.max_health = 1000
+sniperlaserturret.max_health = 500
 sniperlaserturret.folded_animation = nori_laser_turret_extension{frame_count=1, line_length = 1, tint = lightred}
 sniperlaserturret.preparing_animation = nori_laser_turret_extension{type = "gun", tint = lightred}
 sniperlaserturret.folding_animation = nori_laser_turret_extension{run_mode = "backward",tint = lightred}
@@ -262,9 +262,9 @@ sniperlaserturret.minable.result = "sniper-laser-turret"
 sniperlaserturret.energy_source =
     {
       type = "electric",
-      buffer_capacity = "12801kJ",
-      input_flow_limit = "25600kW",
-      drain = "48kW",
+      buffer_capacity = "18750kJ",
+      input_flow_limit = "7500kW",
+      drain = "72kW",
       usage_priority = "primary-input"
     }
 sniperlaserturret.attack_parameters =
@@ -280,7 +280,7 @@ sniperlaserturret.attack_parameters =
       {
         type = "projectile",
         category = "laser-turret",
-        energy_consumption = "6400kJ",
+        energy_consumption = "8000kJ",
         action =
         {
           {
