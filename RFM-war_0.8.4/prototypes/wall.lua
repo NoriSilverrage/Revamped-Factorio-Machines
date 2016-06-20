@@ -1,3 +1,5 @@
+local defaultcolor = {r=0.651, g=0.792, b=1}
+
 data:extend({ 
  {
     type = "item",
@@ -62,6 +64,7 @@ data:extend({
 local wall2 = table.deepcopy(data.raw["wall"]["stone-wall"])
 wall2.name = "reinforced-wall"
 wall2.max_health = 700
+wall2.icon = modname.."/graphics/icons/reinforced-wall.png"
 
 wall2.repair_speed_modifier = 3
     
@@ -115,7 +118,7 @@ wall2.pictures =
             width = 22,
             height = 42,
             shift = {0, -0.15625},
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/stone-wall/wall-single-shadow.png",
@@ -124,7 +127,7 @@ wall2.pictures =
             height = 32,
             shift = {0.359375, 0.5},
             draw_as_shadow = true,
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           }
         }
       },
@@ -139,7 +142,7 @@ wall2.pictures =
               width = 22,
               height = 42,
               shift = {0, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             },
             {
               filename = "__base__/graphics/entity/stone-wall/wall-straight-vertical-shadow.png",
@@ -148,7 +151,7 @@ wall2.pictures =
               height = 60,
               shift = {0.390625, 0.625},
               draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             }
           }
         },
@@ -161,7 +164,7 @@ wall2.pictures =
               width = 22,
               height = 42,
               shift = {0, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             },
             {
               filename = "__base__/graphics/entity/stone-wall/wall-straight-vertical-shadow.png",
@@ -170,7 +173,7 @@ wall2.pictures =
               height = 60,
               shift = {0.390625, 0.625},
               draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             }
           }
         },
@@ -183,7 +186,7 @@ wall2.pictures =
               width = 22,
               height = 42,
               shift = {0, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             },
             {
               filename = "__base__/graphics/entity/stone-wall/wall-straight-vertical-shadow.png",
@@ -192,7 +195,7 @@ wall2.pictures =
               height = 60,
               shift = {0.390625, 0.625},
               draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             }
           }
         }
@@ -208,7 +211,7 @@ wall2.pictures =
               width = 32,
               height = 42,
               shift = {0, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             },
             {
               filename = "__base__/graphics/entity/stone-wall/wall-straight-horizontal-shadow.png",
@@ -217,7 +220,7 @@ wall2.pictures =
               height = 32,
               shift = {0.421875, 0.5},
               draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             }
           }
         },
@@ -230,7 +233,7 @@ wall2.pictures =
               width = 32,
               height = 42,
               shift = {0, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             },
             {
               filename = "__base__/graphics/entity/stone-wall/wall-straight-horizontal-shadow.png",
@@ -239,7 +242,7 @@ wall2.pictures =
               height = 32,
               shift = {0.421875, 0.5},
               draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             }
           }
         },
@@ -252,7 +255,7 @@ wall2.pictures =
               width = 32,
               height = 42,
               shift = {0, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             },
             {
               filename = "__base__/graphics/entity/stone-wall/wall-straight-horizontal-shadow.png",
@@ -261,7 +264,7 @@ wall2.pictures =
               height = 32,
               shift = {0.421875, 0.5},
               draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
             }
           }
         }
@@ -276,7 +279,7 @@ wall2.pictures =
             width = 27,
             height = 42,
             shift = {0.078125, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/stone-wall/wall-corner-right-down-shadow.png",
@@ -285,7 +288,7 @@ wall2.pictures =
             height = 61,
             shift = {0.484375, 0.640625},
             draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           }
         }
       },
@@ -299,7 +302,7 @@ wall2.pictures =
             width = 27,
             height = 42,
             shift = {-0.078125, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/stone-wall/wall-corner-left-down-shadow.png",
@@ -308,7 +311,7 @@ wall2.pictures =
             height = 60,
             shift = {0.328125, 0.640625},
             draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           }
         }
       },
@@ -322,7 +325,7 @@ wall2.pictures =
             width = 32,
             height = 42,
             shift = {0, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/stone-wall/wall-t-down-shadow.png",
@@ -331,7 +334,7 @@ wall2.pictures =
             height = 61,
             shift = {0.546875, 0.640625},
             draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           }
         }
       },
@@ -345,7 +348,7 @@ wall2.pictures =
             width = 27,
             height = 42,
             shift = {0.078125, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/stone-wall/wall-ending-right-shadow.png",
@@ -354,7 +357,7 @@ wall2.pictures =
             height = 32,
             shift = {0.484375, 0.5},
             draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           }
         }
       },
@@ -368,7 +371,7 @@ wall2.pictures =
             width = 27,
             height = 42,
             shift = {-0.078125, -0.15625},
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/stone-wall/wall-ending-left-shadow.png",
@@ -377,7 +380,7 @@ wall2.pictures =
             height = 32,
             shift = {0.328125, 0.5},
             draw_as_shadow = true,
-              tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+              tint = defaultcolor
           }
         }
       }
@@ -390,6 +393,7 @@ data:extend({ wall2 })
 local gate2 = table.deepcopy(data.raw["gate"]["gate"])
 gate2.name = "reinforced-gate"
 gate2.max_health = 700
+gate2.icon = modname.."/graphics/icons/reinforced-gate.png"
 
 gate2.vertical_animation =
     {
@@ -402,7 +406,7 @@ gate2.vertical_animation =
           height = 60,
           frame_count = 16,
           shift = {0.015625, -0.40625},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-vertical-shadow.png",
@@ -412,7 +416,7 @@ gate2.vertical_animation =
           frame_count = 16,
           shift = {0.328125, 0.3},
           draw_as_shadow = true,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -427,7 +431,7 @@ gate2.horizontal_animation =
           height = 36,
           frame_count = 16,
           shift = {0, -0.21875},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-horizontal-shadow.png",
@@ -437,7 +441,7 @@ gate2.horizontal_animation =
           frame_count = 16,
           shift = {0.4375, 0.46875},
           draw_as_shadow = true,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -449,14 +453,14 @@ gate2.vertical_base =
           filename = "__base__/graphics/entity/gate/gate-base-vertical.png",
           width = 32,
           height = 32,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-base-vertical-mask.png",
           width = 32,
           height = 32,
           apply_runtime_tint = true,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -471,7 +475,7 @@ gate2.horizontal_rail_animation_left =
           height = 47,
           frame_count = 16,
           shift = {0, -0.140625 + 0.125},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-rail-horizontal-shadow-left.png",
@@ -481,7 +485,7 @@ gate2.horizontal_rail_animation_left =
           frame_count = 16,
           shift = {0.078125, 0.171875 + 0.125},
           draw_as_shadow = true,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -496,7 +500,7 @@ gate2.horizontal_rail_animation_right =
           height = 43,
           frame_count = 16,
           shift = {0, -0.203125 + 0.125},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-rail-horizontal-shadow-right.png",
@@ -506,7 +510,7 @@ gate2.horizontal_rail_animation_right =
           frame_count = 16,
           shift = {0.60938, 0.2875 + 0.125},
           draw_as_shadow = true,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -521,7 +525,7 @@ gate2.vertical_rail_animation_left =
           height = 54,
           frame_count = 16,
           shift = {0, -0.46875},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-rail-vertical-shadow-left.png",
@@ -531,7 +535,7 @@ gate2.vertical_rail_animation_left =
           frame_count = 16,
           shift = {0.27, -0.16125 + 0.5},
           draw_as_shadow = true,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -546,7 +550,7 @@ gate2.vertical_rail_animation_right =
           height = 55,
           frame_count = 16,
           shift = {0, -0.453125},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-rail-vertical-shadow-right.png",
@@ -556,7 +560,7 @@ gate2.vertical_rail_animation_right =
           frame_count = 16,
           shift = {0.27, 0.803125 - 0.5},
           draw_as_shadow = true,
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -568,7 +572,7 @@ gate2.vertical_rail_base =
       height = 64,
       frame_count = 16,
       shift = {0, 0},
-      tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+      tint = defaultcolor
     }
 gate2.horizontal_rail_base =
     {
@@ -578,7 +582,7 @@ gate2.horizontal_rail_base =
       height = 45,
       frame_count = 16,
       shift = {0, -0.015625 + 0.125},
-      tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+      tint = defaultcolor
     }
 gate2.vertical_rail_base_mask =
     {
@@ -587,7 +591,7 @@ gate2.vertical_rail_base_mask =
       height = 39,
       shift = {0.015625, -0.015625},
       apply_runtime_tint = true,
-      tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+      tint = defaultcolor
     }
 gate2.horizontal_rail_base_mask =
     {
@@ -596,7 +600,7 @@ gate2.horizontal_rail_base_mask =
       height = 45,
       shift = {0.015625, -0.015625 + 0.125},
       apply_runtime_tint = true,
-      tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+      tint = defaultcolor
     }
 gate2.horizontal_base =
     {
@@ -607,7 +611,7 @@ gate2.horizontal_base =
           width = 32,
           height = 23,
           shift = {0, 0.125},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         },
         {
           filename = "__base__/graphics/entity/gate/gate-base-horizontal-mask.png",
@@ -615,7 +619,7 @@ gate2.horizontal_base =
           height = 23,
           apply_runtime_tint = true,
           shift = {0, 0.125},
-          tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+          tint = defaultcolor
         }
       }
     }
@@ -630,7 +634,7 @@ gate2.wall_patch =
             width = 22,
             height = 35,
             shift = {0, -0.62},
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/gate/wall-patch-north-shadow.png",
@@ -638,7 +642,7 @@ gate2.wall_patch =
             height = 31,
             shift = {0.3, 0.20},
             draw_as_shadow = true,
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           }
         }
       },
@@ -651,7 +655,7 @@ gate2.wall_patch =
             width = 11,
             height = 40,
             shift = {0.328125, -0.109375},
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/gate/wall-patch-east-shadow.png",
@@ -659,7 +663,7 @@ gate2.wall_patch =
             height = 32,
             shift = {0.8125, 0.46875},
             draw_as_shadow = true,
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           }
         }
       },
@@ -672,7 +676,7 @@ gate2.wall_patch =
             width = 22,
             height = 40,
             shift = {0, -0.125},
-           tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+           tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/gate/wall-patch-south-shadow.png",
@@ -680,7 +684,7 @@ gate2.wall_patch =
             height = 25,
             shift = {0.3, 0.95},
             draw_as_shadow = true,
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           }
         }
       },
@@ -693,7 +697,7 @@ gate2.wall_patch =
             width = 11,
             height = 40,
             shift = {-0.328125, -0.109375},
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           },
           {
             filename = "__base__/graphics/entity/gate/wall-patch-west-shadow.png",
@@ -701,7 +705,7 @@ gate2.wall_patch =
             height = 32,
             shift = {0.1875, 0.46875},
             draw_as_shadow = true,
-            tint = {r = 0.533, g = 0.357, b = 0.686, a = 0.5}
+            tint = defaultcolor
           }
         }
       }
@@ -746,7 +750,7 @@ gate2.resistances =
           },
     }
 gate2.minable.result = "reinforced-gate"
-gate2.fast_replaceable_group = "gate"
+gate2.fast_replaceable_group = "wall"
 data:extend({ gate2 })
 
 

@@ -298,7 +298,8 @@ ammoturret2.attacking_animation = nori_gun_turret_attack{type = "gun", tint = li
 ammoturret2.base_picture = nori_gun_turret_base{type = "gun", base = darkgreen, mask = green}
 ammoturret2.max_health = 800
 ammoturret2.attack_parameters.range = 22
-ammoturret2.attack_parameters.damage_modifier = 3
+ammoturret2.attack_parameters.damage_modifier = 4
+ammoturret2.attack_parameters.cooldown = 12
 ammoturret2.inventory_size = 2
 ammoturret2.automated_ammo_count = 20
 ammoturret2.minable.result = "adv-ammo-turret"
@@ -341,11 +342,10 @@ sniperammoturret.attacking_animation = nori_gun_turret_attack{type = "gun", tint
 sniperammoturret.base_picture = nori_gun_turret_base{type = "gun", base = darkred, mask = red}
 sniperammoturret.max_health = 600
 sniperammoturret.attack_parameters.range = 45
-sniperammoturret.attack_parameters.damage_modifier = 36
+sniperammoturret.attack_parameters.damage_modifier = 30
 sniperammoturret.attack_parameters.cooldown = 120
 sniperammoturret.inventory_size = 1
 sniperammoturret.automated_ammo_count = 10
-sniperammoturret.attacking_speed = 2
 sniperammoturret.minable.result = "sniper-ammo-turret"
 sniperammoturret.fast_replaceable_group = "turret"
 sniperammoturret.resistances =
