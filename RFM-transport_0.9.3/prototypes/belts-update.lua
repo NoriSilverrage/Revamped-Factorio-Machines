@@ -1,5 +1,5 @@
-data.raw["transport-belt-to-ground"]["fast-transport-belt-to-ground"].max_distance = 7
-data.raw["transport-belt-to-ground"]["express-transport-belt-to-ground"].max_distance = 10
+data.raw["underground-belt"]["fast-underground-belt"].max_distance = 7
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 10
 
 data:extend({ 
   {
@@ -9,7 +9,7 @@ data:extend({
     enabled = "false",
     ingredients =
     {
-      {"fast-transport-belt-to-ground", 6}
+      {"fast-underground-belt", 6}
     },
     result = "fast-transport-belt-mr",
     result_count = 2
@@ -22,7 +22,7 @@ data:extend({
     enabled = "false",
     ingredients =
     {
-      {"express-transport-belt-to-ground", 4}
+      {"express-underground-belt", 4}
     },
     result = "express-transport-belt-mr",
     result_count = 2
@@ -35,7 +35,7 @@ data:extend({
     enabled = "false",
     ingredients =
     {
-      {"fast-transport-belt-to-ground", 14}
+      {"fast-underground-belt", 14}
     },
     result = "fast-transport-belt-lr",
     result_count = 2
@@ -48,7 +48,7 @@ data:extend({
     enabled = "false",
     ingredients =
     {
-      {"express-transport-belt-to-ground", 10}
+      {"express-underground-belt", 10}
     },
     result = "express-transport-belt-lr",
     result_count = 2

@@ -1,5 +1,4 @@
-local UpgradedBasics = true
-
+require("config")
 require("prototypes.mr-belts")
 require("prototypes.lr-belts")
 

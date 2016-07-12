@@ -6,7 +6,6 @@ require("prototypes.laserturrets")
 require("prototypes.projectile")
 require("prototypes.wall")
 
-require("prototypes.flame-upgrades")
 require("prototypes.large-ammo")
 
 if upgradedweapons == true then
