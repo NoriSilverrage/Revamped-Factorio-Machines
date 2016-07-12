@@ -1,0 +1,11 @@
+{
+  "name": "RFM-war",
+  "version": "0.8.5",
+  "factorio_version": "0.13",  
+  "title": "R.F.M. War",
+  "author": "Nori",
+  "contact": "",
+  "homepage": "NA",
+  "description": "bleh",
+  "dependencies": ["base >= 0.13.0","? Natural_Evolution_Enemies >=6.0.0","? RFM-tweaks >=1.0.0","? autofill >= 1.3.13","? Macromanaged_Turrets >= 1.0.4"]
+}

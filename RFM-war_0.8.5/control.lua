@@ -1,5 +1,3 @@
-require "defines"
-require "util"
 
 if remote.interfaces.af then
     require "autofill"

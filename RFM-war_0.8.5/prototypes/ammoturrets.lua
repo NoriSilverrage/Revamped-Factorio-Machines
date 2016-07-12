@@ -147,6 +147,7 @@ return
       priority = "high",
       width = 90,
       height = 75,
+      frame_count = 1,
       axially_symmetrical = false,
       direction_count = 1,
       shift = {0.0625, -0.046875},

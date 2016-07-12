@@ -1,6 +1,6 @@
-data.raw.ammo["basic-bullet-magazine"].ammo_type.action[1].action_delivery[1].target_effects = {{type = "damage", damage = { amount = 3 , type = "physical"}}}
-data.raw.ammo["basic-bullet-magazine"].magazine_size = 20
-data.raw.ammo["piercing-bullet-magazine"].magazine_size = 20
+data.raw.ammo["firearm-magazine"].ammo_type.action[1].action_delivery[1].target_effects = {{type = "damage", damage = { amount = 3 , type = "physical"}}}
+data.raw.ammo["firearm-magazine"].magazine_size = 20
+data.raw.ammo["piercing-rounds-magazine"].magazine_size = 20
 
 data:extend(
 {
@@ -110,15 +110,10 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-          {
-            type = "flame-thrower",
-            explosion = "flame-thrower-explosion",
-                direction_deviation = 0.05,
-                speed_deviation = 0.22,
-                starting_frame_deviation = 0.10,
-                projectile_starting_speed = 0.60,
-                starting_distance = 0.7,
-          }
+          type = "stream",
+          stream = "handheld-flamethrower-fire-stream",
+          max_length = 22,
+          duration = 200,
         }
       }
     },
@@ -229,7 +224,7 @@ data:extend(
     ingredients = 
     {
         {"steel-plate", 5},
-        {"basic-bullet-magazine", 50}
+        {"firearm-magazine", 50}
     },
     result = "large-basic-bullet-magazine",
     result_count = 1
@@ -242,7 +237,7 @@ data:extend(
     ingredients =
     {
         {"steel-plate", 5},
-        {"piercing-bullet-magazine", 50}
+        {"piercing-rounds-magazine", 50}
     },
     result = "large-piercing-bullet-magazine"
   },

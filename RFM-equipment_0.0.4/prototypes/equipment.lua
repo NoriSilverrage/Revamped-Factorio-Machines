@@ -22,12 +22,12 @@ data:extend(
         energy_source =
         {
           type = "electric",
-          buffer_capacity = "14MJ", --base of 7MJ
-          input_flow_limit = "1400KW", --base of 700KW
+          buffer_capacity = "70MJ", --base of 7MJ (25)
+          input_flow_limit = "7000KW", --base of 700KW (3500)
           usage_priority = "secondary-input"
         },
-        charging_energy = "300kW", --base of 200kW
-        energy_consumption = "6kW", -- Base of 4kW
+        charging_energy = "1500kW", --base of 200kW (1000)
+        energy_consumption = "30kW", -- Base of 4kW (20)
 
         robot_limit = 15, --base of 10
         construction_radius = 18, --Covers 1600 tiles, base of 15 (covers 900 tiles)
@@ -86,12 +86,12 @@ data:extend(
         energy_source =
         {
           type = "electric",
-          buffer_capacity = "18MJ",
-          input_flow_limit = "1600KW",
+          buffer_capacity = "65MJ", --base of 7MJ (25)
+          input_flow_limit = "8000KW", --base of 700KW (3500)
           usage_priority = "secondary-input"
         },
-        charging_energy = "450kW",
-        energy_consumption = "9kW",
+        charging_energy = "2250kW", --base of 200kW (1000)
+        energy_consumption = "30kW", -- Base of 4kW (20)
 
         robot_limit = 25,
         construction_radius = 24,
@@ -150,12 +150,12 @@ data:extend(
         energy_source =
         {
           type = "electric",
-          buffer_capacity = "27MJ",
-          input_flow_limit = "2400KW",
+          buffer_capacity = "96MJ", --base of 7MJ (25)
+          input_flow_limit = "1200KW", --base of 700KW (3500)
           usage_priority = "secondary-input"
         },
-        charging_energy = "675kW",
-        energy_consumption = "12kW",
+        charging_energy = "3375kW", --base of 200kW (1000)
+        energy_consumption = "60kW", -- Base of 4kW (20)
 
         robot_limit = 35,
         construction_radius = 30,
@@ -214,12 +214,12 @@ data:extend(
         energy_source =
         {
           type = "electric",
-          buffer_capacity = "2MJ",
-          input_flow_limit = "200KW",
+          buffer_capacity = "7.5MJ", --base of 7MJ (25)
+          input_flow_limit = "1000KW", --base of 700KW (3500)
           usage_priority = "secondary-input"
         },
-        charging_energy = "50kW",
-        energy_consumption = "1kW",
+        charging_energy = "250kW", --base of 200kW (1000)
+        energy_consumption = "5kW", -- Base of 4kW (20)
 
         robot_limit = 3,
         construction_radius = 7.5,
@@ -278,12 +278,12 @@ data:extend(
         energy_source =
         {
           type = "electric",
-          buffer_capacity = "3MJ",
-          input_flow_limit = "300KW",
+          buffer_capacity = "11MJ", --base of 7MJ (25)
+          input_flow_limit = "1500KW", --base of 700KW (3500)
           usage_priority = "secondary-input"
         },
-        charging_energy = "75kW",
-        energy_consumption = "1.5kW",
+        charging_energy = "375kW", --base of 200kW (1000)
+        energy_consumption = "7.5kW", -- Base of 4kW (20)
 
         robot_limit = 5,
         construction_radius = 10,
