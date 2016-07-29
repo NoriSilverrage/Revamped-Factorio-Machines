@@ -75,7 +75,7 @@ data:extend({
     enabled = "false",
     ingredients =
     {
-      {"crusher-v2", 1},
+      {"crusher", 1},
       {"iron-gear-wheel", 10},
       {"electronic-circuit", 5}
     },
@@ -157,7 +157,7 @@ data:extend({
 
 
 -- Crusher Mk2 to Mk4 **************************************************************************
-local crusher2 = table.deepcopy(data.raw["assembling-machine"]["crusher-v2"])
+local crusher2 = table.deepcopy(data.raw["assembling-machine"]["crusher"])
 crusher2.name = "crusher-2"
 crusher2.energy_usage = "120kW"
 crusher2.minable.result = "crusher-2"
@@ -168,7 +168,7 @@ crusher2.animation.filename=modname.."/graphics/entity/crusher/crusher-base-2.pn
 data:extend({ crusher2 })
 
 -- Mk 3
-local crusher3 = table.deepcopy(data.raw["assembling-machine"]["crusher-v2"])
+local crusher3 = table.deepcopy(data.raw["assembling-machine"]["crusher"])
 crusher3.name = "crusher-3"
 crusher3.energy_usage = "170kW"
 crusher3.minable.result = "crusher-3"

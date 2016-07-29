@@ -1,13 +1,13 @@
 
-data.raw["active-defense-equipment"]["basic-laser-defense-equipment"].attack_parameters.ammo_type.category = "laser-turret"
+data.raw["active-defense-equipment"]["personal-laser-defense-equipment"].attack_parameters.ammo_type.category = "laser-turret"
 
 
 data.raw.player["player"].running_speed = 0.15*1.15
 data.raw["player"]["player"].inventory_size = 120
 
-data.raw["transport-belt-to-ground"]["basic-transport-belt-to-ground"].max_distance = 5
-data.raw["transport-belt-to-ground"]["fast-transport-belt-to-ground"].max_distance = 7
-data.raw["transport-belt-to-ground"]["express-transport-belt-to-ground"].max_distance = 10
+data.raw["underground-belt"]["underground-belt"].max_distance = 5
+data.raw["underground-belt"]["fast-underground-belt"].max_distance = 7
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 10
 
 --data.raw["ammo-turret"]["gun-turret"].max_health = 600
 --data.raw["ammo-turret"]["gun-turret"].attack_parameters.range = 19

@@ -11,13 +11,13 @@ data.raw.item["copper-plate"].stack_size = 200
 data.raw.item["concrete"].stack_size = 200
 data.raw.item["stone-wall"].stack_size = 100
 
-data.raw.item["basic-transport-belt"].stack_size = 100
+data.raw.item["transport-belt"].stack_size = 100
 data.raw.item["fast-transport-belt"].stack_size = 100
 data.raw.item["express-transport-belt"].stack_size = 100
-data.raw.item["basic-inserter"].stack_size = 100
+data.raw.item["inserter"].stack_size = 100
 data.raw.item["long-handed-inserter"].stack_size = 100
 data.raw.item["fast-inserter"].stack_size = 100
-data.raw.item["smart-inserter"].stack_size = 100
+data.raw.item["filter-inserter"].stack_size = 100
 data.raw.item["pipe"].stack_size = 100
 data.raw.item["pipe-to-ground"].stack_size = 100
 data.raw.item["steam-engine"].stack_size = 50

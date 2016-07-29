@@ -185,14 +185,14 @@ data.raw.recipe["green-transport-belt"].ingredients =
     }
 
     
-data.raw.recipe["green-transport-belt-to-ground"].category = "crafting-with-fluid"
-data.raw.recipe["green-transport-belt-to-ground"].ingredients =
+data.raw.recipe["green-underground-belt"].category = "crafting-with-fluid"
+data.raw.recipe["green-underground-belt"].ingredients =
     {
-      {"express-transport-belt-to-ground", 2},
+      {"express-underground-belt", 2},
       {"iron-gear-wheel", 30},
       {type="fluid", name="lubricant", amount=15}
     }
-data.raw["transport-belt-to-ground"]["green-transport-belt-to-ground"].max_distance = 15
+data.raw["underground-belt"]["green-underground-belt"].max_distance = 15
 	
     
 --Purple
@@ -214,14 +214,14 @@ data.raw.recipe["purple-transport-belt"].ingredients =
     }
 
     
-data.raw.recipe["purple-transport-belt-to-ground"].category = "crafting-with-fluid"
-data.raw.recipe["purple-transport-belt-to-ground"].ingredients =
+data.raw.recipe["purple-underground-belt"].category = "crafting-with-fluid"
+data.raw.recipe["purple-underground-belt"].ingredients =
     {
-      {"green-transport-belt-to-ground", 2},
+      {"green-underground-belt", 2},
       {"iron-gear-wheel", 40},
       {type="fluid", name="lubricant", amount=20}
     }
-data.raw["transport-belt-to-ground"]["purple-transport-belt-to-ground"].max_distance = 20
+data.raw["underground-belt"]["purple-underground-belt"].max_distance = 20
 	
     
     
@@ -615,7 +615,7 @@ data.raw.recipe["bob-roboport-3"].ingredients = {{"bob-roboport-2", 1},{"steel-p
 data.raw.recipe["bob-roboport-4"].ingredients = {{"bob-roboport-3", 1},{"steel-plate", 15},{"roboport-antenna-2", 5},{"roboport-chargepad-2", 4},{"roboport-door-2", 1}}
 
       
-data.raw.recipe["bob-robochest"].ingredients = {{"smart-chest", 1},{"roboport-antenna-1", 1},{"roboport-chargepad-1", 1},{"roboport-door-1", 1}}
+data.raw.recipe["bob-robochest"].ingredients = {{"steel-chest", 1},{"roboport-antenna-1", 1},{"roboport-chargepad-1", 1},{"roboport-door-1", 1}}
 data.raw.recipe["bob-robochest-2"].ingredients = {{"bob-robochest", 1},{"roboport-antenna-1", 1},{"roboport-chargepad-1", 1},{"roboport-door-1", 1}}
 data.raw.recipe["bob-robochest-3"].ingredients = {{"bob-robochest-2", 1},{"roboport-antenna-2", 1},{"roboport-chargepad-2", 1},{"roboport-door-2", 1}}
 data.raw.recipe["bob-robochest-4"].ingredients = {{"bob-robochest-3", 1},{"roboport-antenna-2", 1},{"roboport-chargepad-2", 1},{"roboport-door-2", 1}}

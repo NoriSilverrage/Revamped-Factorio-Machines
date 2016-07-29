@@ -1,6 +1,6 @@
-data.raw.ammo["basic-bullet-magazine"].ammo_type.action[1].action_delivery[1].target_effects = {{type = "damage", damage = { amount = 3 , type = "physical"}}}
-data.raw.ammo["basic-bullet-magazine"].magazine_size = 20
-data.raw.ammo["piercing-bullet-magazine"].magazine_size = 20
+data.raw.ammo["firearm-magazine"].ammo_type.action[1].action_delivery[1].target_effects = {{type = "damage", damage = { amount = 3 , type = "physical"}}}
+data.raw.ammo["firearm-magazine"].magazine_size = 20
+data.raw.ammo["piercing-rounds-magazine"].magazine_size = 20
 
 data.raw.projectile["cannon-projectile"].collision_box = {{-5, -1.1}, {5, 1.1}}
 data.raw.projectile["cannon-projectile"].piercing_damage = 1000
