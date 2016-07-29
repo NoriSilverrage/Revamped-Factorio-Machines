@@ -1,6 +1,5 @@
 --require("kspower")
 
-require "defines"
 require "util"
 script.on_event(defines.events.on_player_created, function(event)
   local player = game.get_player(event.player_index)
