@@ -1,0 +1,11 @@
+{
+	"name": "Moreinventory",
+	"version": "1.0.0",
+	"title": "More Inv",
+	"description": "20 extra slots",
+	"author": "Nori",
+	"contact": "NA",
+	"factorio_version": "0.17",
+	"dependencies":
+	["base >= 0.17.67"]
+}
