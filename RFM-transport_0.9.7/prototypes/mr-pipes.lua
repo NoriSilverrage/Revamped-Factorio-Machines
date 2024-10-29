@@ -3,7 +3,7 @@ data:extend({
     type = "item",
     name = "iron-pipe-mr",
     icon = modname.."/graphics/icons/pipe-to-ground-mr.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "energy-pipe-distribution",
     order = "a[pipe]-b[pipe-to-ground]-c",
     place_result = "iron-pipe-mr",
@@ -27,21 +27,10 @@ data:extend({
 local mr1 = table.deepcopy(data.raw["pipe-to-ground"]["pipe-to-ground"])
 mr1.name = "iron-pipe-mr"
 mr1.icon = modname.."/graphics/icons/pipe-to-ground-mr.png"
+mr1.icon_size = 64
 mr1.minable.result = "iron-pipe-mr"
 mr1.max_health = 225
-mr1.fluid_box =
-{
-	base_area = 1,
-	pipe_covers = pipecoverspictures(),
-	pipe_connections =
-	{
-		{ position = {0, -1} },
-		{
-			position = {0, 1},
-			max_underground_distance = 20
-		}
-	}
-}
+mr1.fluid_box.pipe_connections[2].max_underground_distance = mr1.fluid_box.pipe_connections[2].max_underground_distance*2
 mr1.fast_replaceable_group = "pipe-to-ground"
 data:extend({ mr1 })
 
